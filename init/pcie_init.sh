@@ -7,7 +7,7 @@
 # h - write word - 4 bytes, 8 pairs
 # h - write halfword - 2 bytes, 4 pairs
 # b - write byte - 1 byte, 2 pairs
-
+ifconfig eth1 169.254.48.197
 clear
 modprobe phy_j721e_wiz
 
@@ -115,8 +115,11 @@ init_phy()
 	header "INIT PHY"
 
 	echo "++ wiz_clk_mux_set_parent ++"
-	update_register $((BASE_ADDRESS_PHY + 0x040c)) "0x22800000" "w"
+	update_register $((BASE_ADDRESS_PHY + 0x040c)) "0xa2800000" "w"
 	#update_register $((BASE_ADDRESS_PHY + 0x040c)) "0x2000000" "w"
+
+	# [phy:0x0][cdns_torrent_refclk_driver_register:2241] [read] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x82aabc0, val = 0x0
+	# [phy:0x0][cdns_torrent_refclk_driver_register:2242] [write] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x82aabc0, val = 0x1
 
 	update_register $((BASE_ADDRESS_PHY + 0x00a0)) "0x252" "h"
 	
@@ -125,6 +128,7 @@ init_phy()
 
 	echo "++ link_cmn_vals ++"
 	update_register $((BASE_ADDRESS_PHY + 0xc01c)) "0x3" "h"
+
 	update_register $((BASE_ADDRESS_PHY + 0x0342)) "0x601" "h"
 	update_register $((BASE_ADDRESS_PHY + 0x0362)) "0x400" "h"
 	update_register $((BASE_ADDRESS_PHY + 0x0382)) "0x8600" "h"
@@ -151,25 +155,28 @@ init_phy()
 	update_register $((BASE_ADDRESS_PHY + 0x87fe)) "0x1" "h"
 
 	echo "++ Link reset ++"
-	value=$(read_register $((BASE_ADDRESS_PHY + 0xf004)))
+	offset=0xf004
+	value=$(read_register $((BASE_ADDRESS_PHY + offset)))
 	# echo $value
 	value=$(($value | 0x1000000))
 	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDRESS_PHY + 0xf004)) $value "w"
+	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
 	
 	echo "++ P0_FORCE_ENABLE ++"
-	value=$(read_register $((BASE_ADDRESS_PHY + 0x0480)))
+	offset=0x0480
+	value=$(read_register $((BASE_ADDRESS_PHY + offset)))
 	# echo $value
-	value=($value + 0x40000000)
-	# echo $value
-	update_register $((BASE_ADDRESS_PHY + 0x04c0)) $value "w"
+	value=$((value | 0x40000000))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
 
 	echo "++ P1_FORCE_ENABLE ++"
-	value=$(read_register $((BASE_ADDRESS_PHY + 0x04c0)))
+	offset=0x04c0
+	value=$(read_register $((BASE_ADDRESS_PHY + offset)))
 	# echo $value
-	value=($value + 0x40000000)
-	#value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDRESS_PHY + 0x04c0)) $value "w"
+	value=$((value | 0x40000000))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
 
 	# echo "Take the PHY out of reset"
 	# echo "++ PHY_RESET_N ++"
@@ -198,10 +205,11 @@ init_phy()
 	# 0x506 0080h
 	update_register $((BASE_ADDRESS_PHY + 0x0082)) "0x8700" "h"
 	# echo "++ PHY_RESET_N ++"
-	# update_register $((BASE_ADDRESS_PHY + 0x040c)) 0xa2800000 "w"
+	# update_register $((BASE_ADDRESS_PHY + 0x040c)) "0xa2800000" "w"
 	# 0x22800000
 	# 0x506 008Ch
 	update_register $((BASE_ADDRESS_PHY + 0x008e)) "0x8700" "h"
+	
 	update_register $((BASE_ADDRESS_PHY + 0x0206)) "0x7f" "h"
 	update_register $((BASE_ADDRESS_PHY + 0x0216)) "0x7f" "h"
 
@@ -245,10 +253,11 @@ init_phy()
 	value=$((value | 0x1000000))
 	value=$(printf "0x%x" "$value")
 	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
+
 	echo "++ P3_FORCE_ENABLE ++"
 	offset=0x0540
 	value=$(read_register $((BASE_ADDRESS_PHY + offset)))
-	value=($value + 0x40000000)
+	value=$((value | 0x40000000))
 	value=$(printf "0x%x" "$value")
 	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
 	
@@ -256,22 +265,34 @@ init_phy()
 	offset=0x0410
 	value=$(read_register $((BASE_ADDRESS_PHY + offset)))
 	# echo $value
-	value=($value \& 0xBFFFFFFF)
+	value=$((value & 0xBFFFFFFF))
 	# echo $value
 	value=$(printf "0x%x" "$value")
 	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
 
-	header "Take the PHY out of reset"
+	# offset=0xd014
+	# value=$(read_register $((BASE_ADDRESS_PHY + offset)))
+	# echo $value
+	# value=$((value & $((~0x10000))))
+	# echo $value
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
+	
+	# offset=0xd214
+	# value=$(read_register $((BASE_ADDRESS_PHY + offset)))
+	# echo $value
+	# value=$((value & $((~0x10000))))
+	# echo $value
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
+	
 	echo "++ PHY_RESET_N ++"
 	offset=0x040c
-	value=$(read_register $((BASE_ADDRESS_PHY + offset)))
-	echo $value
-	value=$((value | 0x80000000))
-	echo $value
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDRESS_PHY + $offset)) $value "w"
-
-	# update_register $((BASE_ADDRESS_PHY + 0x040c)) 0xa2800000 "w"
+	# value=$(read_register $((BASE_ADDRESS_PHY + offset)))
+	# value=$((value | 0xc0000000))
+	# value=$(printf "0x%x" "$value")
+	# echo $value
+	update_register $((BASE_ADDRESS_PHY + $offset)) 0xa2800000 "w"
 	
 	echo "++ Wait for cmn_ready assertion ++"
 	# regmap_field_read_poll_timeout
@@ -280,10 +301,14 @@ init_phy()
 		echo "stopping script..."
 		exit 1
 	fi
-	exit 1
+
+	# It is missing configurations
+
+	#
 	echo "++ Wait for phy_status ++"
 	# regmap_field_read_poll_timeout
-	wait_for_register_value $((BASE_ADDRESS_PHY + 0xd014)) 0x20000 0x20000 0.1 2
+	wait_for_register_value $((BASE_ADDRESS_PHY + 0xd014)) 0x10000 0x10000 0.1 2
+	#wait_for_register_value $((BASE_ADDRESS_PHY + 0xd014)) 0x20000 0x20000 0.1 2
 	if [ "$?" -eq "1" ]; then
 		echo "stopping script..."
 		exit 1
@@ -299,6 +324,8 @@ BASE_ADDR_CTRL_MMR=0x100000
 init_pcie()
 {
 	header "INIT PCIE"
+	
+	update_register $((BASE_ADDRESS_CFG + 0x0010)) "0x7" "w"
 	# 
 	echo "++ j721e_pcie_set_link_speed ++"
 	update_register $((BASE_ADDR_CTRL_MMR + 0x4074)) "0x80" "w"
@@ -308,7 +335,7 @@ init_pcie()
 	update_register $((BASE_ADDR_CTRL_MMR + 0x4074)) "0x182" "w"
 
 	echo "++ j721e_pcie_config_link_irq ++"
-	update_register $((BASE_ADDRESS_INTD + 0x108)) "0x2" "w"
+	update_register $((BASE_ADDRESS_INTD + 0x108)) "0x400" "w"
 	
 	exit 0
 	echo "++ reset ++"
@@ -492,5 +519,20 @@ init_pcie()
 	update_register $((BASE_ADDRESS_DBN))
 }
 
+
+# read_phy
+
+# update_register $((BASE_ADDRESS_CFG + 0x0010))
+
+# echo "++ j721e_pcie_set_link_speed ++"
+# update_register $((BASE_ADDR_CTRL_MMR + 0x4074))
+# echo "++ j721e_pcie_set_mode ++"
+# update_register $((BASE_ADDR_CTRL_MMR + 0x4074))
+# echo "++ j721e_pcie_set_lane_count ++"
+# update_register $((BASE_ADDR_CTRL_MMR + 0x4074))
+
+# echo "++ j721e_pcie_config_link_irq ++"
+# update_register $((BASE_ADDRESS_INTD + 0x108))
+
 init_phy
-# init_pcie
+init_pcie
