@@ -106,14 +106,79 @@ header() {
 	echo "###############################################################"
 }
 
+modify_register() {
+    local address="$1"
+    local mask="$2"
+    local operator="$3"
+
+    value=$(read_register $address)
+
+    case "$operator" in
+        "&") value=$((value & mask)) ;;
+        "|") value=$((value | mask)) ;;
+        "^") value=$((value ^ mask)) ;;
+        *) echo "invalid operator: $operator"; return 1 ;;
+    esac
+
+    value=$(printf "0x%x" "$value")
+    update_register $address "w" $value
+	address=$(printf "0x%x" "$address")
+    echo "Register at $address updated to $value"
+}
+
 BASE_ADDR_WIZ0=0x5060000
 BASE_ADDR_WIZ1=0x5070000
 BASE_ADDR_WIZ2=0x5020000
 BASE_ADDR_WIZ4=0x5050000
+BASE_ADDR_CTRL_MMR=0x100000
+
+unlockPartition()
+{
+	local address="$1"
+	update_register $address "w" "0x68EF3490"
+	update_register $((address + 0x4)) "w" "0xD172BC5A"
+}
 
 init_phy()
 {
 	header "INIT PHY"
+
+	#
+	# Un-lock Partition 1 : 4000h to 5FFFh
+	# LOCK1_KICK0
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x5008)) "w" "0x68EF3490"
+	# LOCK1_KICK1
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x500C)) "w" "0xD172BC5A"
+	unlockPartition $((BASE_ADDR_CTRL_MMR + 0x5008))
+	#
+	# Un-lock Partition 2 : 8000h to 9FFFh
+	# LOCK2_KICK0
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x9008)) "w" "0x68EF3490"
+	# LOCK2_KICK1
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x900C)) "w" "0xD172BC5A"
+	unlockPartition $((BASE_ADDR_CTRL_MMR + 0x9008))
+	
+	# Enable ACSPCIe0 PAD 0 and 1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x18090)) "w" "0x01000000"
+	# Enable ACSPCIe1 PAD 0 and 1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x18094)) "w" "0x01000000"
+	
+	# PCIE_REFCLK0_CLKSEL : EN + MAIN_PLL2_HSDIV4_CLKOUT
+	update_register $((BASE_ADDR_CTRL_MMR + 0x8070)) "w" "0x00000101"
+	# PCIE_REFCLK1_CLKSEL : EN + MAIN_PLL2_HSDIV4_CLKOUT
+	update_register $((BASE_ADDR_CTRL_MMR + 0x8074)) "w" "0x00000101"
+
+
+	# # LOCK1_KICK0
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x5008)) "w" "0x0"
+	# # LOCK1_KICK1
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x500C)) "w" "0x0"
+	# #
+	# # Un-lock Partition 2 : 8000h to 9FFFh
+	# # LOCK2_KICK0
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x9008)) "w" "0x0"
+	# # LOCK2_KICK1
+	# update_register $((BASE_ADDR_CTRL_MMR + 0x900C)) "w" "0x0"
 
 	echo "++ wiz_clk_mux_set_parent ++"
 	update_register $((BASE_ADDR_WIZ0 + 0x040c)) "w" "0xa2800000"
@@ -123,9 +188,12 @@ init_phy()
 	# [phy:0x0][cdns_torrent_refclk_driver_register:2242] [write] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x82aabc0, val = 0x1
 
 	update_register $((BASE_ADDR_WIZ0 + 0x00a0)) "h" "0x252"
-	
+
 	# Enable APB
 	# missing torrent_phy_probe
+	
+	echo "++ P0_FORCE_ENABLE ++"
+	modify_register $((BASE_ADDR_WIZ0 + 0x0480)) 0x40000000 "|"
 
 	echo "++ link_cmn_vals ++"
 	update_register $((BASE_ADDR_WIZ0 + 0xc01c)) "h" "0x3"
@@ -156,28 +224,31 @@ init_phy()
 	update_register $((BASE_ADDR_WIZ0 + 0x87fe)) "h" "0x1"
 
 	echo "++ Link reset ++"
-	offset=0xf004
-	value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
+	# offset=0xf004
+	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
 	# echo $value
-	value=$(($value | 0x1000000))
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
+	# value=$(($value | 0x1000000))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
 	
-	echo "++ P0_FORCE_ENABLE ++"
-	offset=0x0480
-	value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
+	modify_register $((BASE_ADDR_WIZ0 + 0xf004)) 0x1000000 "|"
+
+	# echo "++ P0_FORCE_ENABLE ++"
+	# offset=0x0480
+	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
 	# echo $value
-	value=$((value | 0x40000000))
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
+	# value=$((value | 0x40000000))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
 
 	echo "++ P1_FORCE_ENABLE ++"
-	offset=0x04c0
-	value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
+	modify_register $((BASE_ADDR_WIZ0 + 0x04c0)) 0x40000000 "|"
+	# offset=0x04c0
+	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
 	# echo $value
-	value=$((value | 0x40000000))
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
+	# value=$((value | 0x40000000))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
 
 	# echo "Take the PHY out of reset"
 	# echo "++ PHY_RESET_N ++"
@@ -201,19 +272,20 @@ init_phy()
 	update_register $((BASE_ADDR_WIZ0 + 0xc040)) "h" "0xa0a"
 	update_register $((BASE_ADDR_WIZ0 + 0xc044)) "h" "0x1000"
 	update_register $((BASE_ADDR_WIZ0 + 0xc046)) "h" "0x10"
-
+	
 	echo "++ cmn_vals ++"                                    
 	# 0x506 0080h                                            
 	update_register $((BASE_ADDR_WIZ0 + 0x0082)) "h" "0x8700"
 	# echo "++ PHY_RESET_N ++"
 	# update_register $((BASE_ADDR_WIZ0 + 0x040c)) "w" "0xa2800000" 
 	# 0x22800000
+	update_register $((BASE_ADDR_WIZ0 + 0x040c)) "w" "0x22800000" 
 	# 0x506 008Ch
 	update_register $((BASE_ADDR_WIZ0 + 0x008e)) "h" "0x8700"
 
 	update_register $((BASE_ADDR_WIZ0 + 0x0206)) "h" "0x7f"
 	update_register $((BASE_ADDR_WIZ0 + 0x0216)) "h" "0x7f"
-
+	
 	echo "++ tx_ln_vals ++"
 	update_register $((BASE_ADDR_WIZ0 + 0x4e00)) "h" "0x2ff"
 	update_register $((BASE_ADDR_WIZ0 + 0x4e02)) "h" "0x6af"
@@ -249,27 +321,33 @@ init_phy()
 	update_register $((BASE_ADDR_WIZ0 + 0x8d04)) "h" "0x3"
 	
 	echo " ++ Link reset ++"
-	offset=0xf204
-	value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
-	value=$((value | 0x1000000))
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
+	# offset=0xf204
+	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
+	# value=$((value | 0x1000000))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value
+	
+	modify_register $((BASE_ADDR_WIZ0 + 0xf204)) 0x1000000 "|"
 
 	echo "++ P3_FORCE_ENABLE ++"
-	offset=0x0540
-	value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
-	value=$((value | 0x40000000))
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value 
+	# offset=0x0540
+	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
+	# value=$((value | 0x40000000))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value 
+	
+	modify_register $((BASE_ADDR_WIZ0 + 0x0540)) 0x40000000 "|"
 	
 	echo "++ typec_ln10_swap ++"
-	offset=0x0410
-	value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
-	# echo $value
-	value=$((value & 0xBFFFFFFF))
-	# echo $value
-	value=$(printf "0x%x" "$value")
-	update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value 
+	# offset=0x0410
+	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
+	echo $value
+	# value=$((value & 0xBFFFFFFF))
+	echo $value
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_WIZ0 + $offset)) "w" $value 
+	
+	modify_register $((BASE_ADDR_WIZ0 + 0x0410)) 0xBFFFFFFF "&"
 
 	# offset=0xd014
 	# value=$(read_register $((BASE_ADDR_WIZ0 + offset)))
@@ -317,17 +395,20 @@ init_phy()
 		echo "stopping script..."
 		exit 1
 	fi
-	
 }
 
 BASE_ADDR_DBN=0xd800000
 BASE_ADDR_CFG=0x2917000
 BASE_ADDR_INTD=0x2910000
 BASE_ADDR_CTRL_MMR=0x100000
+BASE_ADDR_MCU_MMR=0x40F00000
+BASE_ADDR_WKUP_MMR=0x43000000
 
 init_pcie()
 {
 	header "INIT PCIE"
+
+	#update_register $((BASE_ADDR_CTRL_MMR + 0x8400)) "w" "0x3"
 
 	# update_register $((BASE_ADDR_CFG + 0x0010)) "w" "0x0007"
 	# 
@@ -521,10 +602,210 @@ init_pcie()
 	update_register $((BASE_ADDR_DBN))
 }
 
+serdesPorReset()
+{
+	# offset=0x404
+	# value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	# value=$((value | 0x80000000))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+	
+	modify_register $BASE_ADDR_CTRL_MMR 0x404 0x80000000 "|"
+	
+	sleep 0.0001
+	
+	modify_register $BASE_ADDR_CTRL_MMR 0x404 0x7FFFFFFF "&"
+	# offset=0x404
+	# value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	# value=$((value & 0x7FFFFFFF))
+	# value=$(printf "0x%x" "$value")
+	# update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+}
 
+serdesIPSelect()
+{
+	# PCIe1 Lane0
+	offset=0x4080
+	value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	value=$((value & 0xFFFFFFFD))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+	# PCIe1 Lane1
+	offset=0x4084
+	value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	value=$((value & 0xFFFFFFFD))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+	# PCIe1 Lane3
+	offset=0x4088
+	value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	value=$((value & 0xFFFFFFFD))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+	# PCIe1 Lane4
+	offset=0x408c
+	value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	value=$((value & 0xFFFFFFFD))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+}
+
+serdesRefclkSetInt0()
+{
+	offset=0x408c
+	value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	value=$((value & 0xDFDFFFFF))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+}
+
+serdesRefclkSetInt1()
+{
+	offset=0x408c
+	value=$(read_register $((BASE_ADDR_CTRL_MMR + offset)))
+	# echo $value
+	value=$((value & 0xDFDFFFFF))
+	value=$(printf "0x%x" "$value")
+	update_register $((BASE_ADDR_CTRL_MMR + $offset)) "w" $value
+}
+
+unlockCtrlMMR()
+{
+	# Un-lock Partition 0 :  to 
+	# LOCK0_KICK0
+	update_register $((BASE_ADDR_CTRL_MMR + 0x1008)) "w" "0x68EF3490"
+	# LOCK0_KICK1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x100C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 1 : 4000h to 5FFFh
+	# LOCK1_KICK0
+	update_register $((BASE_ADDR_CTRL_MMR + 0x5008)) "w" "0x68EF3490"
+	# LOCK1_KICK1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x500C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 2 : 8000h to 9FFFh
+	# LOCK2_KICK0
+	update_register $((BASE_ADDR_CTRL_MMR + 0x9008)) "w" "0x68EF3490"
+	# LOCK2_KICK1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x900C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 3 :  to 
+	# LOCK3_KICK0
+	update_register $((BASE_ADDR_CTRL_MMR + 0xd008)) "w" "0x68EF3490"
+	# LOCK3_KICK1
+	update_register $((BASE_ADDR_CTRL_MMR + 0xd00C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 5 :  to 
+	# LOCK5_KICK0
+	update_register $((BASE_ADDR_CTRL_MMR + 0x15008)) "w" "0x68EF3490"
+	# LOCK5_KICK1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x1500C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 7 :  to 
+	# LOCK7_KICK0
+	update_register $((BASE_ADDR_CTRL_MMR + 0x1d008)) "w" "0x68EF3490"
+	# LOCK7_KICK1
+	update_register $((BASE_ADDR_CTRL_MMR + 0x1d00C)) "w" "0xD172BC5A"
+}
+
+unlockMcuMMR()
+{
+	# Un-lock Partition 0 :  to 
+	# LOCK0_KICK0
+	update_register $((BASE_ADDR_MCU_MMR + 0x1008)) "w" "0x68EF3490"
+	# LOCK0_KICK1
+	update_register $((BASE_ADDR_MCU_MMR + 0x100C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 1 : 4000h to 5FFFh
+	# LOCK1_KICK0
+	update_register $((BASE_ADDR_MCU_MMR + 0x5008)) "w" "0x68EF3490"
+	# LOCK1_KICK1
+	update_register $((BASE_ADDR_MCU_MMR + 0x500C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 3 :  to 
+	# LOCK3_KICK0
+	update_register $((BASE_ADDR_MCU_MMR + 0xd008)) "w" "0x68EF3490"
+	# LOCK3_KICK1
+	update_register $((BASE_ADDR_MCU_MMR + 0xd00C)) "w" "0xD172BC5A"
+}
+
+unlockWkupMMR()
+{
+	# Un-lock Partition 0 :  to 
+	# LOCK0_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x1008)) "w" "0x68EF3490"
+	# LOCK0_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x100C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 1 : 4000h to 5FFFh
+	# LOCK1_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x5008)) "w" "0x68EF3490"
+	# LOCK1_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x500C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 2 : 8000h to 9FFFh
+	# LOCK2_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x9008)) "w" "0x68EF3490"
+	# LOCK2_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x900C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 3 :  to 
+	# LOCK3_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0xd008)) "w" "0x68EF3490"
+	# LOCK3_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0xd00C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 4 :  to 
+	# LOCK4_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x11008)) "w" "0x68EF3490"
+	# LOCK4_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x1100C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 5 :  to 
+	# LOCK5_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x15008)) "w" "0x68EF3490"
+	# LOCK5_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x1500C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 6 :  to 
+	# LOCK6_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x19008)) "w" "0x68EF3490"
+	# LOCK6_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x1900C)) "w" "0xD172BC5A"
+	#
+	# Un-lock Partition 7 :  to 
+	# LOCK7_KICK0
+	update_register $((BASE_ADDR_WKUP_MMR + 0x1d008)) "w" "0x68EF3490"
+	# LOCK7_KICK1
+	update_register $((BASE_ADDR_WKUP_MMR + 0x1d00C)) "w" "0xD172BC5A"
+}
+
+init_phy2()
+{
+	serdesPorReset
+	
+	serdesIPSelect
+}
+
+
+
+#############################################################
 # read_phy
 
 # update_register $((BASE_ADDR_CFG + 0x0010))
+
+
+# unlockCtrlMMR
+# unlockMcuMMR
+# unlockWkupMMR
+# serdesPorReset
 
 # echo "++ j721e_pcie_set_link_speed ++"
 # update_register $((BASE_ADDR_CTRL_MMR + 0x4074))
@@ -535,6 +816,7 @@ init_pcie()
 
 # echo "++ j721e_pcie_config_link_irq ++"
 # update_register $((BASE_ADDRESS_INTD + 0x108))
-
+# init_phy2
 init_phy
-init_pcie
+# init_phy
+# init_pcie
