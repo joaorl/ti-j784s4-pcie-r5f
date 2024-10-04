@@ -5,772 +5,787 @@
 [dphy][cdns_dphy_probe:464] phys_addr = 0x45a0000
 [dphy:0x0][cdns_dphy_probe:464] physical address = 0x45a0000
 [dphy][cdns_dphy_probe:464] phys_addr = 0x4480000
-[wiz][wiz_probe:1703]
-[wiz][wiz_probe:1717] type = 0x4
-[wiz][wiz_get_lane_phy_types:1650]
-[wiz][wiz_get_lane_phy_types:1656]
-[wiz][wiz_get_lane_phy_types:1684]
-[wiz][wiz_probe:1807] regmap = 0x4385c00
-[wiz][wiz_regfield_init:555]
-[wiz][wiz_regfield_init:561] [alloc] regmap = 0x4385c00, por_en = 0x79c2b00
-[wiz][wiz_regfield_init:571] [alloc] regmap = 0x4385c00, phy_reset_n = 0x79c2bc0
-[wiz][wiz_regfield_init:581] [alloc] regmap = 0x4385c00, pma_cmn_refclk_int_mode = 0x79c2c80
-[wiz][wiz_regfield_init:591] [alloc] regmap = 0x4385c00, pma_cmn_refclk_mode = 0x79c2d40
-[wiz][wiz_regfield_init:601] [alloc] regmap = 0x4385c00, wiz->div_sel_field[CMN_REFCLK_DIG_DIV] = 0x79c2e00
-[wiz][wiz_regfield_init:637] [alloc] scm_regmap = 0x4385c00, mux_sel_field[PLL0_REFCLK] = 0x79c2ec0
-[wiz][wiz_regfield_init:647] [alloc] scm_regmap = 0x4385c00, mux_sel_field[PLL1_REFCLK] = 0x79c2f80
-[wiz][wiz_regfield_init:657] [alloc] scm_regmap = 0x4385c00, wiz->mux_sel_field[REFCLK_DIG] = 0x79c2500
-[wiz][wiz_regfield_init:668] [alloc] scm_regmap = 0x4385c00, wiz->pma_cmn_refclk1_int_mode = 0x61c4ec0
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x4385c00, wiz->p_enable[i] = 0x61c4d40
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x4385c00, wiz->p_align[i] = 0x61c4e00
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x4385c00, wiz->p_raw_auto_start[i] = 0x61c4f80
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x4385c00, wiz->p_standard_mode[i] = 0x61c48c0
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x4385c00, wiz->p0_fullrt_div[i] = 0x61c4980
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x4385c00, wiz->p0_mac_src_sel[i] = 0x80e3080
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x4385c00, wiz->p0_rxfclk_sel[i] = 0x80e3140
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x4385c00, wiz->p0_refclk_sel[i] = 0x80e3200
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel0[i] = 0x80e32c0
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel1[i] = 0x80e3380
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x4385c00, wiz->p_enable[i] = 0x80e3440
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x4385c00, wiz->p_align[i] = 0x80e3500
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x4385c00, wiz->p_raw_auto_start[i] = 0x80e35c0
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x4385c00, wiz->p_standard_mode[i] = 0x80e3680
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x4385c00, wiz->p0_fullrt_div[i] = 0x80e3740
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x4385c00, wiz->p0_mac_src_sel[i] = 0x80e3800
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x4385c00, wiz->p0_rxfclk_sel[i] = 0x80e38c0
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x4385c00, wiz->p0_refclk_sel[i] = 0x80e3980
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel0[i] = 0x80e3a40
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel1[i] = 0x80e3b00
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x4385c00, wiz->p_enable[i] = 0x80e3bc0
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x4385c00, wiz->p_align[i] = 0x80e3c80
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x4385c00, wiz->p_raw_auto_start[i] = 0x80e3d40
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x4385c00, wiz->p_standard_mode[i] = 0x80e3e00
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x4385c00, wiz->p0_fullrt_div[i] = 0x80e3ec0
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x4385c00, wiz->p0_mac_src_sel[i] = 0x80e3f80
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x4385c00, wiz->p0_rxfclk_sel[i] = 0x2ea5a40
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x4385c00, wiz->p0_refclk_sel[i] = 0x8883080
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel0[i] = 0x8883140
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel1[i] = 0x8883200
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x4385c00, wiz->p_enable[i] = 0x88832c0
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x4385c00, wiz->p_align[i] = 0x8883380
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x4385c00, wiz->p_raw_auto_start[i] = 0x8883440
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x4385c00, wiz->p_standard_mode[i] = 0x8883500
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x4385c00, wiz->p0_fullrt_div[i] = 0x88835c0
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x4385c00, wiz->p0_mac_src_sel[i] = 0x8883680
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x4385c00, wiz->p0_rxfclk_sel[i] = 0x8883740
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x4385c00, wiz->p0_refclk_sel[i] = 0x8883800
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel0[i] = 0x88838c0
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x4385c00, wiz->p_mac_div_sel1[i] = 0x8883980
-[wiz][wiz_regfield_init:781] [alloc] regmap = 0x4385c00, wiz->typec_ln10_swap = 0x8883a40
-[wiz][wiz_regfield_init:791] [alloc] regmap = 0x4385c00, wiz->typec_ln23_swap = 0x8883b00
-[wiz][wiz_regfield_init:800] [alloc] regmap = 0x4385c00, wiz->phy_en_refclk = 0x8883bc0
-[wiz][wiz_probe:1832] nr_resets = 0x5
-[wiz][wiz_clock_probe:1315]
-[wiz][wiz_clock_probe:1338]
-[wiz][wiz_clock_init:1206]
-[wiz][wiz_clock_init:1212] [read] field = 0x79c2c80, val = 0x0
-[wiz][wiz_clock_init:1216] [write]  wiz->pma_cmn_refclk_int_mode = 0x79c2c80, val = 0x1
-[wiz][wiz_clock_init:1268] [read] field = 0x61c4ec0, val = 0x0
-[wiz][wiz_clock_init:1271] [write]  wiz->pma_cmn_refclk1_int_mode = 0x61c4ec0, val = 0x1
-[wiz][wiz_clock_init:1289] [read] field = 0x79c2d40, val = 0x0
-[wiz][wiz_clock_init:1292] [write]  wiz->pma_cmn_refclk_mode = 0x79c2d40, val = 0x0
-[wiz][wiz_clock_register:1178]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x79c2ec0, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x79c2f80, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x79c2500, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_clock_register:1187]
-[wiz][wiz_phy_en_refclk_register:857]
-[wiz][wiz_phy_en_refclk_register:887]
-[wiz][wiz_clock_register:1199]
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x61c4d40, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x80e3440, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x80e3bc0, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x88832c0, val = 0x82f3b7d4
-[wiz][wiz_init:519]
-[wiz][wiz_reset:412]
-[wiz][wiz_reset:416] [write] wiz->por_en = 0x79c2b00, val = 0x1
-[wiz][wiz_reset:422] [write] wiz->por_en = 0x79c2b00, val = 0x0
-[wiz][wiz_mode_select:459]
-[wiz][wiz_p_mac_div_sel:431]
-[wiz][wiz_init_raw_interface:496]
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[0] = 0x61c4e00, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[0] = 0x61c4f80, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[1] = 0x80e3500, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[1] = 0x80e35c0, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[2] = 0x80e3c80, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[2] = 0x80e3d40, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[3] = 0x8883380, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[3] = 0x8883440, val = 0x1
 [dphy:0x0][cdns_dphy_probe:464] physical address = 0x4480000
-[wiz][wiz_probe:1703]
-[wiz][wiz_probe:1717] type = 0x4
-[wiz][wiz_get_lane_phy_types:1650]
-[wiz][wiz_get_lane_phy_types:1656]
-[wiz][wiz_get_lane_phy_types:1684]
-[wiz][wiz_probe:1807] regmap = 0x20ddc00
-[wiz][wiz_regfield_init:555]
-[wiz][wiz_regfield_init:561] [alloc] regmap = 0x20ddc00, por_en = 0x8804f80
-[wiz][wiz_regfield_init:571] [alloc] regmap = 0x20ddc00, phy_reset_n = 0x8804080
-[wiz][wiz_regfield_init:581] [alloc] regmap = 0x20ddc00, pma_cmn_refclk_int_mode = 0x8804140
-[wiz][wiz_regfield_init:591] [alloc] regmap = 0x20ddc00, pma_cmn_refclk_mode = 0x8804200
-[wiz][wiz_regfield_init:601] [alloc] regmap = 0x20ddc00, wiz->div_sel_field[CMN_REFCLK_DIG_DIV] = 0x211b080
-[wiz][wiz_regfield_init:637] [alloc] scm_regmap = 0x20ddc00, mux_sel_field[PLL0_REFCLK] = 0x211b140
-[wiz][wiz_regfield_init:647] [alloc] scm_regmap = 0x20ddc00, mux_sel_field[PLL1_REFCLK] = 0x211b200
-[wiz][wiz_regfield_init:657] [alloc] scm_regmap = 0x20ddc00, wiz->mux_sel_field[REFCLK_DIG] = 0x211b2c0
-[wiz][wiz_regfield_init:668] [alloc] scm_regmap = 0x20ddc00, wiz->pma_cmn_refclk1_int_mode = 0x211b380
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x20ddc00, wiz->p_enable[i] = 0x211b440
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x20ddc00, wiz->p_align[i] = 0x211b500
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x20ddc00, wiz->p_raw_auto_start[i] = 0x211b5c0
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x20ddc00, wiz->p_standard_mode[i] = 0x211b680
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x20ddc00, wiz->p0_fullrt_div[i] = 0x211b740
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x20ddc00, wiz->p0_mac_src_sel[i] = 0x211b800
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x20ddc00, wiz->p0_rxfclk_sel[i] = 0x211b8c0
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x20ddc00, wiz->p0_refclk_sel[i] = 0x211b980
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel0[i] = 0x211ba40
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel1[i] = 0x211bb00
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x20ddc00, wiz->p_enable[i] = 0x211bbc0
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x20ddc00, wiz->p_align[i] = 0x211bc80
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x20ddc00, wiz->p_raw_auto_start[i] = 0x211bd40
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x20ddc00, wiz->p_standard_mode[i] = 0x211be00
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x20ddc00, wiz->p0_fullrt_div[i] = 0x211bec0
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x20ddc00, wiz->p0_mac_src_sel[i] = 0x211bf80
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x20ddc00, wiz->p0_rxfclk_sel[i] = 0x5642080
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x20ddc00, wiz->p0_refclk_sel[i] = 0x5642140
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel0[i] = 0x5642200
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel1[i] = 0x56422c0
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x20ddc00, wiz->p_enable[i] = 0x5642380
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x20ddc00, wiz->p_align[i] = 0x5642440
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x20ddc00, wiz->p_raw_auto_start[i] = 0x5642500
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x20ddc00, wiz->p_standard_mode[i] = 0x56425c0
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x20ddc00, wiz->p0_fullrt_div[i] = 0x5642680
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x20ddc00, wiz->p0_mac_src_sel[i] = 0x5642740
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x20ddc00, wiz->p0_rxfclk_sel[i] = 0x5642800
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x20ddc00, wiz->p0_refclk_sel[i] = 0x56428c0
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel0[i] = 0x5642980
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel1[i] = 0x5642a40
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x20ddc00, wiz->p_enable[i] = 0x5642b00
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x20ddc00, wiz->p_align[i] = 0x5642bc0
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x20ddc00, wiz->p_raw_auto_start[i] = 0x5642c80
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x20ddc00, wiz->p_standard_mode[i] = 0x5642d40
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x20ddc00, wiz->p0_fullrt_div[i] = 0x5642e00
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x20ddc00, wiz->p0_mac_src_sel[i] = 0x5642ec0
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x20ddc00, wiz->p0_rxfclk_sel[i] = 0x5642f80
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x20ddc00, wiz->p0_refclk_sel[i] = 0x78ee080
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel0[i] = 0x78ee140
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x20ddc00, wiz->p_mac_div_sel1[i] = 0x78ee200
-[wiz][wiz_regfield_init:781] [alloc] regmap = 0x20ddc00, wiz->typec_ln10_swap = 0x78ee2c0
-[wiz][wiz_regfield_init:791] [alloc] regmap = 0x20ddc00, wiz->typec_ln23_swap = 0x78ee380
-[wiz][wiz_regfield_init:800] [alloc] regmap = 0x20ddc00, wiz->phy_en_refclk = 0x78ee440
-[wiz][wiz_probe:1832] nr_resets = 0x5
-[wiz][wiz_clock_probe:1315]
-[wiz][wiz_clock_probe:1338]
-[wiz][wiz_clock_init:1206]
-[wiz][wiz_clock_init:1212] [read] field = 0x8804140, val = 0x0
-[wiz][wiz_clock_init:1216] [write]  wiz->pma_cmn_refclk_int_mode = 0x8804140, val = 0x1
-[wiz][wiz_clock_init:1268] [read] field = 0x211b380, val = 0x0
-[wiz][wiz_clock_init:1271] [write]  wiz->pma_cmn_refclk1_int_mode = 0x211b380, val = 0x1
-[wiz][wiz_clock_init:1289] [read] field = 0x8804200, val = 0x0
-[wiz][wiz_clock_init:1292] [write]  wiz->pma_cmn_refclk_mode = 0x8804200, val = 0x0
-[wiz][wiz_clock_register:1178]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x211b140, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x211b200, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x211b2c0, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_clock_register:1187]
-[wiz][wiz_phy_en_refclk_register:857]
-[wiz][wiz_phy_en_refclk_register:887]
+[wiz][wiz_probe:1715]
+[wiz][wiz_probe:1729] type = 0x4
+[wiz][wiz_get_lane_phy_types:1662]
+[wiz][wiz_get_lane_phy_types:1668]
+[wiz][wiz_get_lane_phy_types:1696]
+[wiz][wiz_probe:1819] regmap = 0x21af400
+[wiz][wiz_regfield_init:566]
+[wiz][wiz_regfield_init:572] [alloc] regmap = 0x21af400, por_en = 0x89a7a40
+[wiz][wiz_regfield_init:582] [alloc] regmap = 0x21af400, phy_reset_n = 0x89a7b00
+[wiz][wiz_regfield_init:592] [alloc] regmap = 0x21af400, pma_cmn_refclk_int_mode = 0x89a7bc0
+[wiz][wiz_regfield_init:602] [alloc] regmap = 0x21af400, pma_cmn_refclk_mode = 0x89a7c80
+[wiz][wiz_regfield_init:612] [alloc] regmap = 0x21af400, wiz->div_sel_field[CMN_REFCLK_DIG_DIV] = 0x89a7d40
+[wiz][wiz_regfield_init:648] [alloc] scm_regmap = 0x21af400, mux_sel_field[PLL0_REFCLK] = 0x89a7e00
+[wiz][wiz_regfield_init:658] [alloc] scm_regmap = 0x21af400, mux_sel_field[PLL1_REFCLK] = 0x89a7ec0
+[wiz][wiz_regfield_init:668] [alloc] scm_regmap = 0x21af400, wiz->mux_sel_field[REFCLK_DIG] = 0x89a7f80
+[wiz][wiz_regfield_init:679] [alloc] scm_regmap = 0x21af400, wiz->pma_cmn_refclk1_int_mode = 0x7540080
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21af400, wiz->p_enable[i] = 0x7540140
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21af400, wiz->p_align[i] = 0x7540200
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21af400, wiz->p_raw_auto_start[i] = 0x75402c0
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21af400, wiz->p_standard_mode[i] = 0x7540380
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21af400, wiz->p0_fullrt_div[i] = 0x7540440
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21af400, wiz->p0_mac_src_sel[i] = 0x7540500
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21af400, wiz->p0_rxfclk_sel[i] = 0x75405c0
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21af400, wiz->p0_refclk_sel[i] = 0x7540680
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel0[i] = 0x7540740
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel1[i] = 0x7540800
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21af400, wiz->p_enable[i] = 0x75408c0
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21af400, wiz->p_align[i] = 0x7540980
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21af400, wiz->p_raw_auto_start[i] = 0x7540a40
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21af400, wiz->p_standard_mode[i] = 0x7540b00
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21af400, wiz->p0_fullrt_div[i] = 0x7540bc0
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21af400, wiz->p0_mac_src_sel[i] = 0x7540c80
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21af400, wiz->p0_rxfclk_sel[i] = 0x7540d40
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21af400, wiz->p0_refclk_sel[i] = 0x7540e00
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel0[i] = 0x7540ec0
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel1[i] = 0x7540f80
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21af400, wiz->p_enable[i] = 0x23e4080
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21af400, wiz->p_align[i] = 0x23e4140
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21af400, wiz->p_raw_auto_start[i] = 0x23e4200
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21af400, wiz->p_standard_mode[i] = 0x23e42c0
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21af400, wiz->p0_fullrt_div[i] = 0x23e4380
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21af400, wiz->p0_mac_src_sel[i] = 0x23e4440
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21af400, wiz->p0_rxfclk_sel[i] = 0x23e4500
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21af400, wiz->p0_refclk_sel[i] = 0x23e45c0
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel0[i] = 0x23e4680
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel1[i] = 0x23e4740
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21af400, wiz->p_enable[i] = 0x23e4800
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21af400, wiz->p_align[i] = 0x23e48c0
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21af400, wiz->p_raw_auto_start[i] = 0x23e4980
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21af400, wiz->p_standard_mode[i] = 0x23e4a40
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21af400, wiz->p0_fullrt_div[i] = 0x23e4b00
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21af400, wiz->p0_mac_src_sel[i] = 0x23e4bc0
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21af400, wiz->p0_rxfclk_sel[i] = 0x23e4c80
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21af400, wiz->p0_refclk_sel[i] = 0x23e4d40
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel0[i] = 0x23e4e00
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21af400, wiz->p_mac_div_sel1[i] = 0x23e4ec0
+[wiz][wiz_regfield_init:792] [alloc] regmap = 0x21af400, wiz->typec_ln10_swap = 0x23e4f80
+[wiz][wiz_regfield_init:802] [alloc] regmap = 0x21af400, wiz->typec_ln23_swap = 0x625f080
+[wiz][wiz_regfield_init:811] [alloc] regmap = 0x21af400, wiz->phy_en_refclk = 0x625f140
+[wiz][wiz_probe:1844] nr_resets = 0x5
+[wiz][wiz_clock_probe:1327]
+[wiz][wiz_clock_probe:1350]
+[wiz][wiz_clock_init:1218]
+[wiz][wiz_clock_init:1224] [read] field = 0x89a7bc0, val = 0x0
+[wiz][wiz_clock_init:1228] [write]  wiz->pma_cmn_refclk_int_mode = 0x89a7bc0, val = 0x1
+[wiz][wiz_clock_init:1280] [read] field = 0x7540080, val = 0x0
+[wiz][wiz_clock_init:1283] [write]  wiz->pma_cmn_refclk1_int_mode = 0x7540080, val = 0x1
+[wiz][wiz_clock_init:1301] [read] field = 0x89a7c80, val = 0x0
+[wiz][wiz_clock_init:1304] [write]  wiz->pma_cmn_refclk_mode = 0x89a7c80, val = 0x0
+[wiz][wiz_clock_register:1190]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x89a7e00, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x89a7ec0, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x89a7f80, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
 [wiz][wiz_clock_register:1199]
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x211b440, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x211bbc0, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x5642380, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x5642b00, val = 0x82f3b7d4
-[wiz][wiz_init:519]
-[wiz][wiz_reset:412]
-[wiz][wiz_reset:416] [write] wiz->por_en = 0x8804f80, val = 0x1
-[wiz][wiz_reset:422] [write] wiz->por_en = 0x8804f80, val = 0x0
-[wiz][wiz_mode_select:459]
-[wiz][wiz_p_mac_div_sel:431]
-[wiz][wiz_init_raw_interface:496]
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[0] = 0x211b500, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[0] = 0x211b5c0, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[1] = 0x211bc80, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[1] = 0x211bd40, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[2] = 0x5642440, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[2] = 0x5642500, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[3] = 0x5642bc0, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[3] = 0x5642c80, val = 0x1
-[wiz][wiz_probe:1703]
-[wiz][wiz_probe:1717] type = 0x4
-[wiz][wiz_get_lane_phy_types:1650]
-[wiz][wiz_get_lane_phy_types:1656]
-[wiz][wiz_get_lane_phy_types:1684]
-[wiz][wiz_probe:1807] regmap = 0x2191400
-[wiz][wiz_regfield_init:555]
-[wiz][wiz_regfield_init:561] [alloc] regmap = 0x2191400, por_en = 0x79885c0
-[wiz][wiz_regfield_init:571] [alloc] regmap = 0x2191400, phy_reset_n = 0x7988680
-[wiz][wiz_regfield_init:581] [alloc] regmap = 0x2191400, pma_cmn_refclk_int_mode = 0x7988740
-[wiz][wiz_regfield_init:591] [alloc] regmap = 0x2191400, pma_cmn_refclk_mode = 0x7988800
-[wiz][wiz_regfield_init:601] [alloc] regmap = 0x2191400, wiz->div_sel_field[CMN_REFCLK_DIG_DIV] = 0x79888c0
-[wiz][wiz_regfield_init:637] [alloc] scm_regmap = 0x2191400, mux_sel_field[PLL0_REFCLK] = 0x7988980
-[wiz][wiz_regfield_init:647] [alloc] scm_regmap = 0x2191400, mux_sel_field[PLL1_REFCLK] = 0x7988a40
-[wiz][wiz_regfield_init:657] [alloc] scm_regmap = 0x2191400, wiz->mux_sel_field[REFCLK_DIG] = 0x7988b00
-[wiz][wiz_regfield_init:668] [alloc] scm_regmap = 0x2191400, wiz->pma_cmn_refclk1_int_mode = 0x7988bc0
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x2191400, wiz->p_enable[i] = 0x7988c80
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x2191400, wiz->p_align[i] = 0x7988d40
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x2191400, wiz->p_raw_auto_start[i] = 0x7988e00
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x2191400, wiz->p_standard_mode[i] = 0x7988ec0
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x2191400, wiz->p0_fullrt_div[i] = 0x7988f80
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x2191400, wiz->p0_mac_src_sel[i] = 0x7ba1080
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x2191400, wiz->p0_rxfclk_sel[i] = 0x7ba1140
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x2191400, wiz->p0_refclk_sel[i] = 0x7ba1200
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel0[i] = 0x7ba12c0
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel1[i] = 0x7ba1380
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x2191400, wiz->p_enable[i] = 0x7ba1440
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x2191400, wiz->p_align[i] = 0x7ba1500
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x2191400, wiz->p_raw_auto_start[i] = 0x7ba15c0
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x2191400, wiz->p_standard_mode[i] = 0x7ba1680
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x2191400, wiz->p0_fullrt_div[i] = 0x7ba1740
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x2191400, wiz->p0_mac_src_sel[i] = 0x7ba1800
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x2191400, wiz->p0_rxfclk_sel[i] = 0x7ba18c0
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x2191400, wiz->p0_refclk_sel[i] = 0x7ba1980
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel0[i] = 0x7ba1a40
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel1[i] = 0x7ba1b00
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x2191400, wiz->p_enable[i] = 0x7ba1bc0
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x2191400, wiz->p_align[i] = 0x7ba1c80
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x2191400, wiz->p_raw_auto_start[i] = 0x7ba1d40
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x2191400, wiz->p_standard_mode[i] = 0x7ba1e00
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x2191400, wiz->p0_fullrt_div[i] = 0x7ba1ec0
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x2191400, wiz->p0_mac_src_sel[i] = 0x7ba1f80
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x2191400, wiz->p0_rxfclk_sel[i] = 0x828f080
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x2191400, wiz->p0_refclk_sel[i] = 0x828f140
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel0[i] = 0x828f200
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel1[i] = 0x828f2c0
-[wiz][wiz_regfield_init:680] [alloc] regmap = 0x2191400, wiz->p_enable[i] = 0x828f380
-[wiz][wiz_regfield_init:690] [alloc] regmap = 0x2191400, wiz->p_align[i] = 0x828f440
-[wiz][wiz_regfield_init:701] [alloc] regmap = 0x2191400, wiz->p_raw_auto_start[i] = 0x828f500
-[wiz][wiz_regfield_init:712] [alloc] regmap = 0x2191400, wiz->p_standard_mode[i] = 0x828f5c0
-[wiz][wiz_regfield_init:721] [alloc] regmap = 0x2191400, wiz->p0_fullrt_div[i] = 0x828f680
-[wiz][wiz_regfield_init:730] [alloc] regmap = 0x2191400, wiz->p0_mac_src_sel[i] = 0x828f740
-[wiz][wiz_regfield_init:739] [alloc] regmap = 0x2191400, wiz->p0_rxfclk_sel[i] = 0x828f800
-[wiz][wiz_regfield_init:748] [alloc] regmap = 0x2191400, wiz->p0_refclk_sel[i] = 0x828f8c0
-[wiz][wiz_regfield_init:759] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel0[i] = 0x828f980
-[wiz][wiz_regfield_init:770] [alloc] regmap = 0x2191400, wiz->p_mac_div_sel1[i] = 0x828fa40
-[wiz][wiz_regfield_init:781] [alloc] regmap = 0x2191400, wiz->typec_ln10_swap = 0x828fb00
-[wiz][wiz_regfield_init:791] [alloc] regmap = 0x2191400, wiz->typec_ln23_swap = 0x828fbc0
-[wiz][wiz_regfield_init:800] [alloc] regmap = 0x2191400, wiz->phy_en_refclk = 0x828fc80
-[wiz][wiz_probe:1832] nr_resets = 0x5
-[wiz][wiz_clock_probe:1315]
-[wiz][wiz_clock_probe:1338]
-[wiz][wiz_clock_init:1206]
-[wiz][wiz_clock_init:1212] [read] field = 0x7988740, val = 0x0
-[wiz][wiz_clock_init:1216] [write]  wiz->pma_cmn_refclk_int_mode = 0x7988740, val = 0x1
-[wiz][wiz_clock_init:1268] [read] field = 0x7988bc0, val = 0x0
-[wiz][wiz_clock_init:1271] [write]  wiz->pma_cmn_refclk1_int_mode = 0x7988bc0, val = 0x1
-[wiz][wiz_clock_init:1289] [read] field = 0x7988800, val = 0x0
-[wiz][wiz_clock_init:1292] [write]  wiz->pma_cmn_refclk_mode = 0x7988800, val = 0x0
-[wiz][wiz_clock_register:1178]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x7988980, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x7988a40, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_mux_clk_register:938]
-[wiz][wiz_mux_clk_register:948]
-[wiz][wiz_mux_clk_register:959]
-[wiz][wiz_mux_clk_register:973]
-[wiz][wiz_clk_mux_get_parent:899] [read] field = 0x7988b00, val = 0x0, index = 0x2
-[wiz][wiz_mux_clk_register:979]
-[wiz][wiz_clock_register:1187]
-[wiz][wiz_phy_en_refclk_register:857]
-[wiz][wiz_phy_en_refclk_register:887]
+[wiz][wiz_phy_en_refclk_register:868]
+[wiz][wiz_phy_en_refclk_register:898]
+[wiz][wiz_clock_register:1211]
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x7540140, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x75408c0, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x23e4080, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x23e4800, val = 0x8373b7d4
+[wiz][wiz_init:530]
+[wiz][wiz_reset:423]
+[wiz][wiz_reset:427] [write] wiz->por_en = 0x89a7a40, val = 0x1
+[wiz][wiz_reset:433] [write] wiz->por_en = 0x89a7a40, val = 0x0
+[wiz][wiz_mode_select:470]
+[wiz][wiz_p_mac_div_sel:442]
+[wiz][wiz_init_raw_interface:507]
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[0] = 0x7540200, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[0] = 0x75402c0, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[1] = 0x7540980, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[1] = 0x7540a40, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[2] = 0x23e4140, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[2] = 0x23e4200, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[3] = 0x23e48c0, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[3] = 0x23e4980, val = 0x1
+[wiz][wiz_probe:1715]
+[wiz][wiz_probe:1729] type = 0x4
+[wiz][wiz_get_lane_phy_types:1662]
+[wiz][wiz_get_lane_phy_types:1668]
+[wiz][wiz_get_lane_phy_types:1696]
+[wiz][wiz_probe:1819] regmap = 0x21adc00
+[wiz][wiz_regfield_init:566]
+[wiz][wiz_regfield_init:572] [alloc] regmap = 0x21adc00, por_en = 0x625fb00
+[wiz][wiz_regfield_init:582] [alloc] regmap = 0x21adc00, phy_reset_n = 0x625fbc0
+[wiz][wiz_regfield_init:592] [alloc] regmap = 0x21adc00, pma_cmn_refclk_int_mode = 0x625fc80
+[wiz][wiz_regfield_init:602] [alloc] regmap = 0x21adc00, pma_cmn_refclk_mode = 0x625fd40
+[wiz][wiz_regfield_init:612] [alloc] regmap = 0x21adc00, wiz->div_sel_field[CMN_REFCLK_DIG_DIV] = 0x625fe00
+[wiz][wiz_regfield_init:648] [alloc] scm_regmap = 0x21adc00, mux_sel_field[PLL0_REFCLK] = 0x625fec0
+[wiz][wiz_regfield_init:658] [alloc] scm_regmap = 0x21adc00, mux_sel_field[PLL1_REFCLK] = 0x625ff80
+[wiz][wiz_regfield_init:668] [alloc] scm_regmap = 0x21adc00, wiz->mux_sel_field[REFCLK_DIG] = 0x88ef080
+[wiz][wiz_regfield_init:679] [alloc] scm_regmap = 0x21adc00, wiz->pma_cmn_refclk1_int_mode = 0x88ef140
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21adc00, wiz->p_enable[i] = 0x88ef200
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21adc00, wiz->p_align[i] = 0x88ef2c0
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21adc00, wiz->p_raw_auto_start[i] = 0x88ef380
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21adc00, wiz->p_standard_mode[i] = 0x88ef440
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21adc00, wiz->p0_fullrt_div[i] = 0x88ef500
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21adc00, wiz->p0_mac_src_sel[i] = 0x88ef5c0
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21adc00, wiz->p0_rxfclk_sel[i] = 0x88ef680
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21adc00, wiz->p0_refclk_sel[i] = 0x88ef740
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel0[i] = 0x88ef800
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel1[i] = 0x88ef8c0
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21adc00, wiz->p_enable[i] = 0x88ef980
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21adc00, wiz->p_align[i] = 0x88efa40
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21adc00, wiz->p_raw_auto_start[i] = 0x88efb00
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21adc00, wiz->p_standard_mode[i] = 0x88efbc0
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21adc00, wiz->p0_fullrt_div[i] = 0x88efc80
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21adc00, wiz->p0_mac_src_sel[i] = 0x88efd40
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21adc00, wiz->p0_rxfclk_sel[i] = 0x88efe00
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21adc00, wiz->p0_refclk_sel[i] = 0x88efec0
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel0[i] = 0x88eff80
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel1[i] = 0x88ee080
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21adc00, wiz->p_enable[i] = 0x88ee140
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21adc00, wiz->p_align[i] = 0x88ee200
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21adc00, wiz->p_raw_auto_start[i] = 0x88ee2c0
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21adc00, wiz->p_standard_mode[i] = 0x88ee380
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21adc00, wiz->p0_fullrt_div[i] = 0x88ee440
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21adc00, wiz->p0_mac_src_sel[i] = 0x88ee500
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21adc00, wiz->p0_rxfclk_sel[i] = 0x88ee5c0
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21adc00, wiz->p0_refclk_sel[i] = 0x88ee680
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel0[i] = 0x88ee740
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel1[i] = 0x88ee800
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21adc00, wiz->p_enable[i] = 0x88ee8c0
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21adc00, wiz->p_align[i] = 0x88ee980
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21adc00, wiz->p_raw_auto_start[i] = 0x88eea40
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21adc00, wiz->p_standard_mode[i] = 0x88eeb00
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21adc00, wiz->p0_fullrt_div[i] = 0x88eebc0
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21adc00, wiz->p0_mac_src_sel[i] = 0x88eec80
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21adc00, wiz->p0_rxfclk_sel[i] = 0x88eed40
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21adc00, wiz->p0_refclk_sel[i] = 0x88eee00
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel0[i] = 0x88eeec0
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21adc00, wiz->p_mac_div_sel1[i] = 0x88eef80
+[wiz][wiz_regfield_init:792] [alloc] regmap = 0x21adc00, wiz->typec_ln10_swap = 0x88ed080
+[wiz][wiz_regfield_init:802] [alloc] regmap = 0x21adc00, wiz->typec_ln23_swap = 0x88ed140
+[wiz][wiz_regfield_init:811] [alloc] regmap = 0x21adc00, wiz->phy_en_refclk = 0x88ed200
+[wiz][wiz_probe:1844] nr_resets = 0x5
+[wiz][wiz_clock_probe:1327]
+[wiz][wiz_clock_probe:1350]
+[wiz][wiz_clock_init:1218]
+[wiz][wiz_clock_init:1224] [read] field = 0x625fc80, val = 0x0
+[wiz][wiz_clock_init:1228] [write]  wiz->pma_cmn_refclk_int_mode = 0x625fc80, val = 0x1
+[wiz][wiz_clock_init:1280] [read] field = 0x88ef140, val = 0x0
+[wiz][wiz_clock_init:1283] [write]  wiz->pma_cmn_refclk1_int_mode = 0x88ef140, val = 0x1
+[wiz][wiz_clock_init:1301] [read] field = 0x625fd40, val = 0x0
+[wiz][wiz_clock_init:1304] [write]  wiz->pma_cmn_refclk_mode = 0x625fd40, val = 0x0
+[wiz][wiz_clock_register:1190]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x625fec0, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x625ff80, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x88ef080, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
 [wiz][wiz_clock_register:1199]
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x7988c80, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x7ba1440, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x7ba1bc0, val = 0x82f3b7d4
-[wiz][wiz_probe:1860] [read]  wiz->p_enable[i] = 0x828f380, val = 0x82f3b7d4
-[wiz][wiz_init:519]
-[wiz][wiz_reset:412]
-[wiz][wiz_reset:416] [write] wiz->por_en = 0x79885c0, val = 0x1
-[wiz][wiz_reset:422] [write] wiz->por_en = 0x79885c0, val = 0x0
-[wiz][wiz_mode_select:459]
-[wiz][wiz_mode_select:484] [write] wiz->p_standard_mode[0] = 0x7988ec0, val = 0x0
-[wiz][wiz_mode_select:484] [write] wiz->p_standard_mode[1] = 0x7ba1680, val = 0x0
-[wiz][wiz_mode_select:484] [write] wiz->p_standard_mode[2] = 0x7ba1e00, val = 0x0
-[wiz][wiz_mode_select:484] [write] wiz->p_standard_mode[3] = 0x828f5c0, val = 0x0
-[wiz][wiz_p_mac_div_sel:431]
-[wiz][wiz_init_raw_interface:496]
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[0] = 0x7988d40, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[0] = 0x7988e00, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[1] = 0x7ba1500, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[1] = 0x7ba15c0, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[2] = 0x7ba1c80, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[2] = 0x7ba1d40, val = 0x1
-[wiz][wiz_init_raw_interface:502] [write] wiz->p_align[3] = 0x828f440, val = 0x1
-[wiz][wiz_init_raw_interface:508] [write] wiz->p_raw_auto_start[3] = 0x828f500, val = 0x1
-###
-###
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x79c2ec0, val = 0x0
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x79c2ec0, val = 0x2, index = 0x0, name =
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x79c2f80, val = 0x0
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x79c2f80, val = 0x2, index = 0x0, name =
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x79c2500, val = 0x0
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x79c2500, val = 0x2, index = 0x0, name =
-[phy:0x0][cdns_torrent_phy_probe:3210] physical address = 0x5060000
-[phy:0x0][cdns_torrent_phy_probe:3212]
-[phy:0x0][cdns_torrent_phy_probe:3230] [read] sd_base = 0x83e50000
-[phy:0x0][cdns_torrent_phy_probe:3237]
-[phy:0x0][cdns_torrent_regmap_init:2423] [info] reg_offset_shift = 0x1
-[phy:0x0][cdns_torrent_regmap_init:2424] [info] block_offset_shift = 0x0
-[phy:0x0][cdns_torrent_regmap_init:2425] [info] sd_base = 0x00000000f7c7bf8a
-[phy:0x0][cdns_torrent_regmap_init:2439] [regmap init] regmap_tx_lane_cdb = 0x20dd000, id = 0x0
-[phy:0x0][cdns_torrent_regmap_init:2452] [regmap init] regmap_rx_lane_cdb = 0x20dd400, id = 0x0
-[phy:0x0][cdns_torrent_regmap_init:2466] [regmap init] regmap_phy_pcs_lane_cdb = 0x20db400, id = 0x0
-[phy:0x0][cdns_torrent_regmap_init:2439] [regmap init] regmap_tx_lane_cdb = 0x2a2f800, id = 0x1
-[phy:0x0][cdns_torrent_regmap_init:2452] [regmap init] regmap_rx_lane_cdb = 0x2a2f400, id = 0x1
-[phy:0x0][cdns_torrent_regmap_init:2466] [regmap init] regmap_phy_pcs_lane_cdb = 0x2a2ec00, id = 0x1
-[phy:0x0][cdns_torrent_regmap_init:2439] [regmap init] regmap_tx_lane_cdb = 0x56a1400, id = 0x2
-[phy:0x0][cdns_torrent_regmap_init:2452] [regmap init] regmap_rx_lane_cdb = 0x56a1800, id = 0x2
-[phy:0x0][cdns_torrent_regmap_init:2466] [regmap init] regmap_phy_pcs_lane_cdb = 0x56a9400, id = 0x2
-[phy:0x0][cdns_torrent_regmap_init:2439] [regmap init] regmap_tx_lane_cdb = 0x56a9800, id = 0x3
-[phy:0x0][cdns_torrent_regmap_init:2452] [regmap init] regmap_rx_lane_cdb = 0x56aa000, id = 0x3
-[phy:0x0][cdns_torrent_regmap_init:2466] [regmap init] regmap_phy_pcs_lane_cdb = 0x56aa400, id = 0x3
-[phy:0x0][cdns_torrent_regmap_init:2480] [regmap init] regmap_common_cdb = 0x56aa800
-[phy:0x0][cdns_torrent_regmap_init:2493] [regmap init] regmap_phy_pcs_common_cdb = 0x79dd1a80
-[phy:0x0][cdns_torrent_regmap_init:2506] [regmap init] regmap_phy_pma_common_cdb = 0x56acc00
-[phy:0x0][cdns_torrent_regmap_init:2508]
-[phy:0x0][cdns_torrent_phy_probe:3241]
-[phy:0x0][cdns_torrent_regfield_init:2299]
-[phy:0x0][cdns_torrent_regfield_init:2308] [alloc] regmap_phy_pcs_common_cdb = 0x56ab000, phy_pll_cfg = 0x8b97380
-[phy:0x0][cdns_torrent_regfield_init:2319] [alloc] regmap_phy_pcs_common_cdb = 0x56ab000, phy_pipe_cmn_ctrl1_0 = 0x8b97440
-[phy:0x0][cdns_torrent_regfield_init:2330] [alloc] regmap_common_cdb = 0x56aa800, cmn_cdiag_refclk_ovrd_4 = 0x8b97500
-[phy:0x0][cdns_torrent_regfield_init:2341] [alloc] regmap_phy_pma_common_cdb = 0x56acc00, phy_pma_cmn_ctrl_1 = 0x8b975c0
-[phy:0x0][cdns_torrent_regfield_init:2352] [alloc] regmap_phy_pma_common_cdb = 0x56acc00, phy_pma_cmn_ctrl_2 = 0x8b97680
-[phy:0x0][cdns_torrent_regfield_init:2363] [alloc] regmap_phy_pma_common_cdb = 0x56acc00, phy_pma_pll_raw_ctrl = 0x8a2abc0
-[phy:0x0][cdns_torrent_regfield_init:2375] [alloc] regmap_phy_pcs_lane_cdb = 0x20db400,i = 0x0, phy_pcs_iso_link_ctrl_1 = 0x8a2ac80
-[phy:0x0][cdns_torrent_regfield_init:2375] [alloc] regmap_phy_pcs_lane_cdb = 0x2a2ec00,i = 0x1, phy_pcs_iso_link_ctrl_1 = 0x8a2ad40
-[phy:0x0][cdns_torrent_regfield_init:2375] [alloc] regmap_phy_pcs_lane_cdb = 0x56a9400,i = 0x2, phy_pcs_iso_link_ctrl_1 = 0x8a2ae00
-[phy:0x0][cdns_torrent_regfield_init:2375] [alloc] regmap_phy_pcs_lane_cdb = 0x56aa400,i = 0x3, phy_pcs_iso_link_ctrl_1 = 0x8a2aec0
-[phy:0x0][cdns_torrent_regfield_init:2378]
-[phy:0x0][cdns_torrent_phy_probe:3245]
-[phy:0x0][cdns_torrent_clk_register:3034]
-[phy:0x0][cdns_torrent_derived_refclk_register:1998]
-[phy:0x0][cdns_torrent_derived_refclk_register:2034]
-[phy:0x0][cdns_torrent_received_refclk_register:2082]
-[phy:0x0][cdns_torrent_received_refclk_register:2118]
-[phy:0x0][cdns_torrent_refclk_driver_register:2195]
-[phy:0x0][cdns_torrent_refclk_driver_register:2213]
-[phy:0x0][cdns_torrent_refclk_driver_register:2228]
-[phy:0x0][cdns_torrent_refclk_driver_register:2228]
-[phy:0x0][cdns_torrent_refclk_driver_register:2228]
-[phy:0x0][cdns_torrent_refclk_driver_register:2228]
-[phy:0x0][cdns_torrent_refclk_driver_register:2239] Enable Derived reference clock as default
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e500a0, shift = 0x1, reg = 0x50, val = 0x83873674
-[phy:0x0][cdns_torrent_refclk_driver_register:2241] [read] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x82aabc0, val = 0x0
-[phy:0x0][cdns_torrent_refclk_driver_register:2242] [write] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x82aabc0, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e500a0, shift = 0x1, reg = 0x50, val = 0x83873604
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e500a0, shift = 0x1, reg = 0x50, val = 0x252
-[phy:0x0][cdns_torrent_refclk_driver_get_parent:2157]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e500a0, shift = 0x1, reg = 0x50, val = 0x83873584
-[phy:0x0][cdns_torrent_refclk_driver_get_parent:2159] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x82aabc0, val = 0x1
-[phy:0x0][cdns_torrent_refclk_driver_register:2253]
-[phy:0x0][cdns_torrent_clk_register:3065]
-[phy:0x0][cdns_torrent_phy_probe:3249]
-[phy:0x0][cdns_torrent_of_get_reset:3072]
-[phy:0x0][cdns_torrent_of_get_reset:3079] [read] phy_rst = 0x8a2d840
-[phy:0x0][cdns_torrent_of_get_reset:3087] [read] apb_rst = 0x0
-[phy:0x0][cdns_torrent_of_get_reset:3088]
-[phy:0x0][cdns_torrent_phy_probe:3253]
-[phy:0x0][cdns_torrent_of_get_clk:3094]
-[phy:0x0][cdns_torrent_of_get_clk:3100] [read] clk = 0x63269c0
-[phy:0x0][cdns_torrent_of_get_clk:3107] [read] clk1 = 0x0
-[phy:0x0][cdns_torrent_of_get_clk:3108]
-[phy:0x0][cdns_torrent_phy_probe:3257]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5e000, shift = 0x1, reg = 0x0, val = 0x83873774
-[phy:0x0][cdns_torrent_phy_probe:3259]
-[phy:0x0][cdns_torrent_clk:3117]
-[phy:0x0][cdns_torrent_clk:3149] ref_clk_rate = 0x5f5e100 #100MHz
-[phy:0x0][cdns_torrent_clk:3186] ref_clk_rate = 0x2
-[phy:0x0][cdns_torrent_clk:3187] ref_clk1_rate = 0x2
-[phy:0x0][cdns_torrent_clk:3188]
-[phy:0x0][cdns_torrent_phy_probe:3267]
-[phy:0x0][cdns_torrent_phy_probe:3269]
-[phy:0x0][cdns_torrent_phy_probe:3346]
-[phy:0x0][cdns_torrent_phy_probe:3346]
-[phy:0x0][cdns_torrent_phy_probe:3419]
-[phy:0x0][cdns_torrent_phy_probe:3425]
-[phy:0x0][cdns_torrent_phy_probe:3427]
-[phy:0x0][cdns_torrent_phy_configure_multilink:2756]
-[phy:0x0][cdns_torrent_phy_configure_multilink:2793] link_cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2806]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x838736a4
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x83873634
-* [phy:0x0][cdns_regmap_write:515] [write] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x3
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x838736a4
-[phy:0x0][cdns_torrent_phy_configure_multilink:2815]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50342, shift = 0x1, reg = 0x1a1, val = 0x83873734
-* [phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50342, shift = 0x1, reg = 0x1a1, val = 0x601
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50342, shift = 0x1, reg = 0x1a1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2815]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50362, shift = 0x1, reg = 0x1b1, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50362, shift = 0x1, reg = 0x1b1, val = 0x400
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50362, shift = 0x1, reg = 0x1b1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2815]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50382, shift = 0x1, reg = 0x1c1, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50382, shift = 0x1, reg = 0x1c1, val = 0x8600
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50382, shift = 0x1, reg = 0x1c1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2829] xcvr_diag_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e541cc, shift = 0x1, reg = 0xe6, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e541cc, shift = 0x1, reg = 0xe6, val = 0x0
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e541cc, shift = 0x1, reg = 0xe6, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e541ce, shift = 0x1, reg = 0xe7, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e541ce, shift = 0x1, reg = 0xe7, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e541ce, shift = 0x1, reg = 0xe7, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e541ca, shift = 0x1, reg = 0xe5, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e541ca, shift = 0x1, reg = 0xe5, val = 0x12
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e541ca, shift = 0x1, reg = 0xe5, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e545cc, shift = 0x1, reg = 0xe6, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e545cc, shift = 0x1, reg = 0xe6, val = 0x0
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e545cc, shift = 0x1, reg = 0xe6, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e545ce, shift = 0x1, reg = 0xe7, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e545ce, shift = 0x1, reg = 0xe7, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e545ce, shift = 0x1, reg = 0xe7, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e545ca, shift = 0x1, reg = 0xe5, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e545ca, shift = 0x1, reg = 0xe5, val = 0x12
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e545ca, shift = 0x1, reg = 0xe5, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2857] pcs_cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2885] phy_pma_cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2913] cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50388, shift = 0x1, reg = 0x1c4, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50388, shift = 0x1, reg = 0x1c4, val = 0x28
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50388, shift = 0x1, reg = 0x1c4, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e501aa, shift = 0x1, reg = 0xd5, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e501aa, shift = 0x1, reg = 0xd5, val = 0x1e
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e501aa, shift = 0x1, reg = 0xd5, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e501ac, shift = 0x1, reg = 0xd6, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e501ac, shift = 0x1, reg = 0xd6, val = 0xc
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e501ac, shift = 0x1, reg = 0xd6, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2941] tx_ln_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2971] rx_ln_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e582e2, shift = 0x1, reg = 0x171, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e582e2, shift = 0x1, reg = 0x171, val = 0x19
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e582e2, shift = 0x1, reg = 0x171, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e582e4, shift = 0x1, reg = 0x172, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e582e4, shift = 0x1, reg = 0x172, val = 0x19
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e582e4, shift = 0x1, reg = 0x172, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e583fe, shift = 0x1, reg = 0x1ff, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e583fe, shift = 0x1, reg = 0x1ff, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e583fe, shift = 0x1, reg = 0x1ff, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e586e2, shift = 0x1, reg = 0x171, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e586e2, shift = 0x1, reg = 0x171, val = 0x19
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e586e2, shift = 0x1, reg = 0x171, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e586e4, shift = 0x1, reg = 0x172, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e586e4, shift = 0x1, reg = 0x172, val = 0x19
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e586e4, shift = 0x1, reg = 0x172, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e587fe, shift = 0x1, reg = 0x1ff, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e587fe, shift = 0x1, reg = 0x1ff, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e587fe, shift = 0x1, reg = 0x1ff, val = 0x83873734
+[wiz][wiz_phy_en_refclk_register:868]
+[wiz][wiz_phy_en_refclk_register:898]
+[wiz][wiz_clock_register:1211]
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x88ef200, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x88ef980, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x88ee140, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x88ee8c0, val = 0x8373b7d4
+[wiz][wiz_init:530]
+[wiz][wiz_reset:423]
+[wiz][wiz_reset:427] [write] wiz->por_en = 0x625fb00, val = 0x1
+[wiz][wiz_reset:433] [write] wiz->por_en = 0x625fb00, val = 0x0
+[wiz][wiz_mode_select:470]
+[wiz][wiz_p_mac_div_sel:442]
+[wiz][wiz_init_raw_interface:507]
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[0] = 0x88ef2c0, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[0] = 0x88ef380, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[1] = 0x88efa40, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[1] = 0x88efb00, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[2] = 0x88ee200, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[2] = 0x88ee2c0, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[3] = 0x88ee980, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[3] = 0x88eea40, val = 0x1
+[wiz][wiz_probe:1715]
+[wiz][wiz_probe:1729] type = 0x4
+[wiz][wiz_get_lane_phy_types:1662]
+[wiz][wiz_get_lane_phy_types:1668]
+[wiz][wiz_get_lane_phy_types:1696]
+[wiz][wiz_probe:1819] regmap = 0x21acc00
+[wiz][wiz_regfield_init:566]
+[wiz][wiz_regfield_init:572] [alloc] regmap = 0x21acc00, por_en = 0x88edc80
+[wiz][wiz_regfield_init:582] [alloc] regmap = 0x21acc00, phy_reset_n = 0x88edd40
+[wiz][wiz_regfield_init:592] [alloc] regmap = 0x21acc00, pma_cmn_refclk_int_mode = 0x88ede00
+[wiz][wiz_regfield_init:602] [alloc] regmap = 0x21acc00, pma_cmn_refclk_mode = 0x88edec0
+[wiz][wiz_regfield_init:612] [alloc] regmap = 0x21acc00, wiz->div_sel_field[CMN_REFCLK_DIG_DIV] = 0x88edf80
+[wiz][wiz_regfield_init:648] [alloc] scm_regmap = 0x21acc00, mux_sel_field[PLL0_REFCLK] = 0x45df080
+[wiz][wiz_regfield_init:658] [alloc] scm_regmap = 0x21acc00, mux_sel_field[PLL1_REFCLK] = 0x45df140
+[wiz][wiz_regfield_init:668] [alloc] scm_regmap = 0x21acc00, wiz->mux_sel_field[REFCLK_DIG] = 0x45df200
+[wiz][wiz_regfield_init:679] [alloc] scm_regmap = 0x21acc00, wiz->pma_cmn_refclk1_int_mode = 0x45df2c0
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21acc00, wiz->p_enable[i] = 0x45df380
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21acc00, wiz->p_align[i] = 0x45df440
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21acc00, wiz->p_raw_auto_start[i] = 0x45df500
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21acc00, wiz->p_standard_mode[i] = 0x45df5c0
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21acc00, wiz->p0_fullrt_div[i] = 0x45df680
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21acc00, wiz->p0_mac_src_sel[i] = 0x45df740
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21acc00, wiz->p0_rxfclk_sel[i] = 0x45df800
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21acc00, wiz->p0_refclk_sel[i] = 0x45df8c0
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel0[i] = 0x45df980
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel1[i] = 0x45dfa40
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21acc00, wiz->p_enable[i] = 0x45dfb00
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21acc00, wiz->p_align[i] = 0x45dfbc0
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21acc00, wiz->p_raw_auto_start[i] = 0x45dfc80
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21acc00, wiz->p_standard_mode[i] = 0x45dfd40
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21acc00, wiz->p0_fullrt_div[i] = 0x45dfe00
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21acc00, wiz->p0_mac_src_sel[i] = 0x45dfec0
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21acc00, wiz->p0_rxfclk_sel[i] = 0x45dff80
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21acc00, wiz->p0_refclk_sel[i] = 0x8859080
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel0[i] = 0x8859140
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel1[i] = 0x8859200
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21acc00, wiz->p_enable[i] = 0x88592c0
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21acc00, wiz->p_align[i] = 0x8859380
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21acc00, wiz->p_raw_auto_start[i] = 0x8859440
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21acc00, wiz->p_standard_mode[i] = 0x8859500
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21acc00, wiz->p0_fullrt_div[i] = 0x88595c0
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21acc00, wiz->p0_mac_src_sel[i] = 0x8859680
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21acc00, wiz->p0_rxfclk_sel[i] = 0x8859740
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21acc00, wiz->p0_refclk_sel[i] = 0x8859800
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel0[i] = 0x88598c0
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel1[i] = 0x8859980
+[wiz][wiz_regfield_init:691] [alloc] regmap = 0x21acc00, wiz->p_enable[i] = 0x8859a40
+[wiz][wiz_regfield_init:701] [alloc] regmap = 0x21acc00, wiz->p_align[i] = 0x8859b00
+[wiz][wiz_regfield_init:712] [alloc] regmap = 0x21acc00, wiz->p_raw_auto_start[i] = 0x8859bc0
+[wiz][wiz_regfield_init:723] [alloc] regmap = 0x21acc00, wiz->p_standard_mode[i] = 0x8859c80
+[wiz][wiz_regfield_init:732] [alloc] regmap = 0x21acc00, wiz->p0_fullrt_div[i] = 0x8859d40
+[wiz][wiz_regfield_init:741] [alloc] regmap = 0x21acc00, wiz->p0_mac_src_sel[i] = 0x8859e00
+[wiz][wiz_regfield_init:750] [alloc] regmap = 0x21acc00, wiz->p0_rxfclk_sel[i] = 0x8859ec0
+[wiz][wiz_regfield_init:759] [alloc] regmap = 0x21acc00, wiz->p0_refclk_sel[i] = 0x8859f80
+[wiz][wiz_regfield_init:770] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel0[i] = 0x8858080
+[wiz][wiz_regfield_init:781] [alloc] regmap = 0x21acc00, wiz->p_mac_div_sel1[i] = 0x8858140
+[wiz][wiz_regfield_init:792] [alloc] regmap = 0x21acc00, wiz->typec_ln10_swap = 0x8858200
+[wiz][wiz_regfield_init:802] [alloc] regmap = 0x21acc00, wiz->typec_ln23_swap = 0x88582c0
+[wiz][wiz_regfield_init:811] [alloc] regmap = 0x21acc00, wiz->phy_en_refclk = 0x8858380
+[wiz][wiz_probe:1844] nr_resets = 0x5
+[wiz][wiz_clock_probe:1327]
+[wiz][wiz_clock_probe:1350]
+[wiz][wiz_clock_init:1218]
+[wiz][wiz_clock_init:1224] [read] field = 0x88ede00, val = 0x0
+[wiz][wiz_clock_init:1228] [write]  wiz->pma_cmn_refclk_int_mode = 0x88ede00, val = 0x1
+[wiz][wiz_clock_init:1280] [read] field = 0x45df2c0, val = 0x0
+[wiz][wiz_clock_init:1283] [write]  wiz->pma_cmn_refclk1_int_mode = 0x45df2c0, val = 0x1
+[wiz][wiz_clock_init:1301] [read] field = 0x88edec0, val = 0x0
+[wiz][wiz_clock_init:1304] [write]  wiz->pma_cmn_refclk_mode = 0x88edec0, val = 0x0
+[wiz][wiz_clock_register:1190]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x45df080, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x45df140, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_mux_clk_register:950]
+[wiz][wiz_mux_clk_register:960]
+[wiz][wiz_mux_clk_register:971]
+[wiz][wiz_mux_clk_register:985]
+[wiz][wiz_clk_mux_get_parent:910] [read] field = 0x45df200, val = 0x0, index = 0x2
+[wiz][wiz_mux_clk_register:991]
+[wiz][wiz_clock_register:1199]
+[wiz][wiz_phy_en_refclk_register:868]
+[wiz][wiz_phy_en_refclk_register:898]
+[wiz][wiz_clock_register:1211]
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x45df380, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x45dfb00, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x88592c0, val = 0x8373b7d4
+[wiz][wiz_probe:1872] [read]  wiz->p_enable[i] = 0x8859a40, val = 0x8373b7d4
+[wiz][wiz_init:530]
+[wiz][wiz_reset:423]
+[wiz][wiz_reset:427] [write] wiz->por_en = 0x88edc80, val = 0x1
+[wiz][wiz_reset:433] [write] wiz->por_en = 0x88edc80, val = 0x0
+[wiz][wiz_mode_select:470]
+[wiz][wiz_mode_select:495] [write] wiz->p_standard_mode[0] = 0x45df5c0, val = 0x0
+[wiz][wiz_mode_select:495] [write] wiz->p_standard_mode[1] = 0x45dfd40, val = 0x0
+[wiz][wiz_mode_select:495] [write] wiz->p_standard_mode[2] = 0x8859500, val = 0x0
+[wiz][wiz_mode_select:495] [write] wiz->p_standard_mode[3] = 0x8859c80, val = 0x0
+[wiz][wiz_p_mac_div_sel:442]
+[wiz][wiz_init_raw_interface:507]
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[0] = 0x45df440, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[0] = 0x45df500, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[1] = 0x45dfbc0, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[1] = 0x45dfc80, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[2] = 0x8859380, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[2] = 0x8859440, val = 0x1
+[wiz][wiz_init_raw_interface:513] [write] wiz->p_align[3] = 0x8859b00, val = 0x1
+[wiz][wiz_init_raw_interface:519] [write] wiz->p_raw_auto_start[3] = 0x8859bc0, val = 0x1
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x89a7e00, val = 0x0
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21af400, shift = 0x1c, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x89a7e00, val = 0x2, index = 0x0, name =
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x89a7ec0, val = 0x0
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21af400, shift = 0x16, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x89a7ec0, val = 0x2, index = 0x0, name =
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x89a7f80, val = 0x0
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21af400, shift = 0x18, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x89a7f80, val = 0x2, index = 0x0, name =
+[phy:0x0][cdns_torrent_phy_probe:3229] physical address = 0x5060000
+[phy:0x0][cdns_torrent_phy_probe:3231] ##
+[phy:0x0][cdns_torrent_phy_probe:3232] ##
+[phy:0x0][cdns_torrent_phy_probe:3251] [read] sd_base = 0x85330000
+[phy:0x0][cdns_torrent_phy_probe:3258]
+[phy:0x0][cdns_torrent_regmap_init:2433] [info] reg_offset_shift = 0x1
+[phy:0x0][cdns_torrent_regmap_init:2434] [info] block_offset_shift = 0x0
+[phy:0x0][cdns_torrent_regmap_init:2435] [info] sd_base = 0x00000000b4a94c57
+[phy:0x0][cdns_torrent_regmap_init:2449] [regmap init] regmap_tx_lane_cdb = 0x6c25000, id = 0x0
+[phy:0x0][cdns_torrent_regmap_init:2462] [regmap init] regmap_rx_lane_cdb = 0x6c23800, id = 0x0
+[phy:0x0][cdns_torrent_regmap_init:2476] [regmap init] regmap_phy_pcs_lane_cdb = 0x6c24c00, id = 0x0
+[phy:0x0][cdns_torrent_regmap_init:2449] [regmap init] regmap_tx_lane_cdb = 0x6c24800, id = 0x1
+[phy:0x0][cdns_torrent_regmap_init:2462] [regmap init] regmap_rx_lane_cdb = 0x6c24400, id = 0x1
+[phy:0x0][cdns_torrent_regmap_init:2476] [regmap init] regmap_phy_pcs_lane_cdb = 0x6c16c00, id = 0x1
+[phy:0x0][cdns_torrent_regmap_init:2449] [regmap init] regmap_tx_lane_cdb = 0x6c17800, id = 0x2
+[phy:0x0][cdns_torrent_regmap_init:2462] [regmap init] regmap_rx_lane_cdb = 0x1e63400, id = 0x2
+[phy:0x0][cdns_torrent_regmap_init:2476] [regmap init] regmap_phy_pcs_lane_cdb = 0x2c6fc00, id = 0x2
+[phy:0x0][cdns_torrent_regmap_init:2449] [regmap init] regmap_tx_lane_cdb = 0x2c6f800, id = 0x3
+[phy:0x0][cdns_torrent_regmap_init:2462] [regmap init] regmap_rx_lane_cdb = 0x2c6f400, id = 0x3
+[phy:0x0][cdns_torrent_regmap_init:2476] [regmap init] regmap_phy_pcs_lane_cdb = 0x2c6f000, id = 0x3
+[phy:0x0][cdns_torrent_regmap_init:2490] [regmap init] regmap_common_cdb = 0x2c6ec00
+[phy:0x0][cdns_torrent_regmap_init:2503] [regmap init] regmap_phy_pcs_common_cdb = 0x79d9a848
+[phy:0x0][cdns_torrent_regmap_init:2516] [regmap init] regmap_phy_pma_common_cdb = 0x2c6e400
+[phy:0x0][cdns_torrent_regmap_init:2518]
+[phy:0x0][cdns_torrent_phy_probe:3262]
+[phy:0x0][cdns_torrent_regfield_init:2309]
+[phy:0x0][cdns_torrent_regfield_init:2318] [alloc] regmap_phy_pcs_common_cdb = 0x2c6e800, phy_pll_cfg = 0x8ae9ec0
+[phy:0x0][cdns_torrent_regfield_init:2329] [alloc] regmap_phy_pcs_common_cdb = 0x2c6e800, phy_pipe_cmn_ctrl1_0 = 0x8ae9f80
+[phy:0x0][cdns_torrent_regfield_init:2340] [alloc] regmap_common_cdb = 0x2c6ec00, cmn_cdiag_refclk_ovrd_4 = 0x8140080
+[phy:0x0][cdns_torrent_regfield_init:2351] [alloc] regmap_phy_pma_common_cdb = 0x2c6e400, phy_pma_cmn_ctrl_1 = 0x8140140
+[phy:0x0][cdns_torrent_regfield_init:2362] [alloc] regmap_phy_pma_common_cdb = 0x2c6e400, phy_pma_cmn_ctrl_2 = 0x8140200
+[phy:0x0][cdns_torrent_regfield_init:2373] [alloc] regmap_phy_pma_common_cdb = 0x2c6e400, phy_pma_pll_raw_ctrl = 0x81402c0
+[phy:0x0][cdns_torrent_regfield_init:2385] [alloc] regmap_phy_pcs_lane_cdb = 0x6c24c00,i = 0x0, phy_pcs_iso_link_ctrl_1 = 0x8140380
+[phy:0x0][cdns_torrent_regfield_init:2385] [alloc] regmap_phy_pcs_lane_cdb = 0x6c16c00,i = 0x1, phy_pcs_iso_link_ctrl_1 = 0x8140440
+[phy:0x0][cdns_torrent_regfield_init:2385] [alloc] regmap_phy_pcs_lane_cdb = 0x2c6fc00,i = 0x2, phy_pcs_iso_link_ctrl_1 = 0x8140500
+[phy:0x0][cdns_torrent_regfield_init:2385] [alloc] regmap_phy_pcs_lane_cdb = 0x2c6f000,i = 0x3, phy_pcs_iso_link_ctrl_1 = 0x81405c0
+[phy:0x0][cdns_torrent_regfield_init:2388]
+[phy:0x0][cdns_torrent_phy_probe:3266]
+[phy:0x0][cdns_torrent_clk_register:3053]
+[phy:0x0][cdns_torrent_derived_refclk_register:2005]
+[phy:0x0][cdns_torrent_derived_refclk_register:2041]
+[phy:0x0][cdns_torrent_received_refclk_register:2089]
+[phy:0x0][cdns_torrent_received_refclk_register:2125]
+[phy:0x0][cdns_torrent_refclk_driver_register:2202]
+[phy:0x0][cdns_torrent_refclk_driver_register:2220]
+[phy:0x0][cdns_torrent_refclk_driver_register:2235]
+[phy:0x0][cdns_torrent_refclk_driver_register:2235]
+[phy:0x0][cdns_torrent_refclk_driver_register:2235]
+[phy:0x0][cdns_torrent_refclk_driver_register:2235]
+[phy:0x0][cdns_torrent_refclk_driver_register:2246] [read] ## ------------------- missing
+[phy:0x0][cdns_torrent_refclk_driver_register:2247] Enable Derived reference clock as default
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853300a0, shift = 0x1, reg = 0x50, val = 0x8384b674
+[phy:0x0][cdns_torrent_refclk_driver_register:2249] [read] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x8140bc0, val = 0x0
+[phy:0x0][cdns_torrent_refclk_driver_register:2250] [write] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x8140bc0, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853300a0, shift = 0x1, reg = 0x50, val = 0x8384b604
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853300a0, shift = 0x1, reg = 0x50, val = 0x252
+[phy:0x0][cdns_torrent_refclk_driver_register:2252] [read] ##
+[phy:0x0][cdns_torrent_refclk_driver_register:2253] [read] ##
+[phy:0x0][cdns_torrent_refclk_driver_get_parent:2164]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853300a0, shift = 0x1, reg = 0x50, val = 0x8384b584
+[phy:0x0][cdns_torrent_refclk_driver_get_parent:2166] CMN_CDIAG_REFCLK_DRV0_CTRL_4 = 0x8140bc0, val = 0x1
+[phy:0x0][cdns_torrent_refclk_driver_register:2263]
+[phy:0x0][cdns_torrent_clk_register:3084]
+[phy:0x0][cdns_torrent_phy_probe:3270]
+[phy:0x0][cdns_torrent_of_get_reset:3091]
+[phy:0x0][cdns_torrent_of_get_reset:3098] [read] phy_rst = 0xf54040
+[phy:0x0][cdns_torrent_of_get_reset:3106] [read] apb_rst = 0x0
+[phy:0x0][cdns_torrent_of_get_reset:3107]
+[phy:0x0][cdns_torrent_phy_probe:3274]
+[phy:0x0][cdns_torrent_of_get_clk:3113]
+[phy:0x0][cdns_torrent_of_get_clk:3119] [read] clk = 0x62b4720
+[phy:0x0][cdns_torrent_of_get_clk:3126] [read] clk1 = 0x0
+[phy:0x0][cdns_torrent_of_get_clk:3127]
+[phy:0x0][cdns_torrent_phy_probe:3278]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533e000, shift = 0x1, reg = 0x0, val = 0x8384b774
+[phy:0x0][cdns_torrent_phy_probe:3280]
+[phy:0x0][cdns_torrent_clk:3136]
+[phy:0x0][cdns_torrent_clk:3168] ref_clk_rate = 0x5f5e100
+[phy:0x0][cdns_torrent_clk:3205] ref_clk_rate = 0x2
+[phy:0x0][cdns_torrent_clk:3206] ref_clk1_rate = 0x2
+[phy:0x0][cdns_torrent_clk:3207]
+[phy:0x0][cdns_torrent_phy_probe:3288]
+[phy:0x0][cdns_torrent_phy_probe:3290]
+[phy:0x0][cdns_torrent_phy_probe:3367]
+[phy:0x0][cdns_torrent_phy_probe:3367]
+[phy:0x0][cdns_torrent_phy_probe:3440]
+[phy:0x0][cdns_torrent_phy_probe:3446]
+[phy:0x0][cdns_torrent_phy_probe:3448]
+[phy:0x0][cdns_torrent_phy_configure_multilink:2774]
+[phy:0x0][cdns_torrent_phy_configure_multilink:2811] link_cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2824]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x8384b6a4
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x8384b634
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x3
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x8384b6a4
+[phy:0x0][cdns_torrent_phy_configure_multilink:2833]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330342, shift = 0x1, reg = 0x1a1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330342, shift = 0x1, reg = 0x1a1, val = 0x601
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330342, shift = 0x1, reg = 0x1a1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2833]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330362, shift = 0x1, reg = 0x1b1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330362, shift = 0x1, reg = 0x1b1, val = 0x400
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330362, shift = 0x1, reg = 0x1b1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2833]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330382, shift = 0x1, reg = 0x1c1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330382, shift = 0x1, reg = 0x1c1, val = 0x8600
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330382, shift = 0x1, reg = 0x1c1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2847] xcvr_diag_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853341cc, shift = 0x1, reg = 0xe6, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853341cc, shift = 0x1, reg = 0xe6, val = 0x0
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853341cc, shift = 0x1, reg = 0xe6, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853341ce, shift = 0x1, reg = 0xe7, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853341ce, shift = 0x1, reg = 0xe7, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853341ce, shift = 0x1, reg = 0xe7, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853341ca, shift = 0x1, reg = 0xe5, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853341ca, shift = 0x1, reg = 0xe5, val = 0x12
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853341ca, shift = 0x1, reg = 0xe5, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853345cc, shift = 0x1, reg = 0xe6, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853345cc, shift = 0x1, reg = 0xe6, val = 0x0
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853345cc, shift = 0x1, reg = 0xe6, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853345ce, shift = 0x1, reg = 0xe7, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853345ce, shift = 0x1, reg = 0xe7, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853345ce, shift = 0x1, reg = 0xe7, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853345ca, shift = 0x1, reg = 0xe5, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853345ca, shift = 0x1, reg = 0xe5, val = 0x12
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853345ca, shift = 0x1, reg = 0xe5, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2875] pcs_cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2903] phy_pma_cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2931] cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330388, shift = 0x1, reg = 0x1c4, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330388, shift = 0x1, reg = 0x1c4, val = 0x28
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330388, shift = 0x1, reg = 0x1c4, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853301aa, shift = 0x1, reg = 0xd5, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853301aa, shift = 0x1, reg = 0xd5, val = 0x1e
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853301aa, shift = 0x1, reg = 0xd5, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853301ac, shift = 0x1, reg = 0xd6, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853301ac, shift = 0x1, reg = 0xd6, val = 0xc
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853301ac, shift = 0x1, reg = 0xd6, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2959] tx_ln_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2989] rx_ln_vals
 [phy:0x0][cdns_torrent_phy_configure_multilink:3001]
-[phy:0x0][cdns_torrent_phy_configure_multilink:3008] lnk_rst = 0x6326960, node = 00
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1548] [write] wiz->p_enable[1 - 1] = 0x61c4d40, P_ENABLE_FORCE = 0x1
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1548] [write] wiz->p_enable[2 - 1] = 0x80e3440, P_ENABLE_FORCE = 0x1
-[phy:0x0][cdns_torrent_phy_configure_multilink:2793] link_cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2806]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x838736a4
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x83873634
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c01c, shift = 0x1, reg = 0xe, val = 0x838736a4
-[phy:0x0][cdns_torrent_phy_configure_multilink:2815]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50342, shift = 0x1, reg = 0x1a1, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50342, shift = 0x1, reg = 0x1a1, val = 0x601
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50342, shift = 0x1, reg = 0x1a1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2815]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50362, shift = 0x1, reg = 0x1b1, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50362, shift = 0x1, reg = 0x1b1, val = 0x400
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50362, shift = 0x1, reg = 0x1b1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2815]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50382, shift = 0x1, reg = 0x1c1, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50382, shift = 0x1, reg = 0x1c1, val = 0x8600
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50382, shift = 0x1, reg = 0x1c1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2829] xcvr_diag_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dcc, shift = 0x1, reg = 0xe6, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54dcc, shift = 0x1, reg = 0xe6, val = 0x11
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dcc, shift = 0x1, reg = 0xe6, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dce, shift = 0x1, reg = 0xe7, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54dce, shift = 0x1, reg = 0xe7, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dce, shift = 0x1, reg = 0xe7, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2840]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dca, shift = 0x1, reg = 0xe5, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54dca, shift = 0x1, reg = 0xe5, val = 0xc9
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dca, shift = 0x1, reg = 0xe5, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2857] pcs_cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2868]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c040, shift = 0x1, reg = 0x20, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e5c040, shift = 0x1, reg = 0x20, val = 0xa0a
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c040, shift = 0x1, reg = 0x20, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2868]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c044, shift = 0x1, reg = 0x22, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e5c044, shift = 0x1, reg = 0x22, val = 0x1000
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c044, shift = 0x1, reg = 0x22, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2868]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c046, shift = 0x1, reg = 0x23, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e5c046, shift = 0x1, reg = 0x23, val = 0x10
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5c046, shift = 0x1, reg = 0x23, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2885] phy_pma_cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2913] cmn_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50082, shift = 0x1, reg = 0x41, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50082, shift = 0x1, reg = 0x41, val = 0x8200
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50082, shift = 0x1, reg = 0x41, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5008e, shift = 0x1, reg = 0x47, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e5008e, shift = 0x1, reg = 0x47, val = 0x8200
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e5008e, shift = 0x1, reg = 0x47, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50206, shift = 0x1, reg = 0x103, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50206, shift = 0x1, reg = 0x103, val = 0x7f
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50206, shift = 0x1, reg = 0x103, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2924]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50216, shift = 0x1, reg = 0x10b, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e50216, shift = 0x1, reg = 0x10b, val = 0x7f
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e50216, shift = 0x1, reg = 0x10b, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2941] tx_ln_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e00, shift = 0x1, reg = 0x100, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54e00, shift = 0x1, reg = 0x100, val = 0x2ff
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e00, shift = 0x1, reg = 0x100, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e02, shift = 0x1, reg = 0x101, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54e02, shift = 0x1, reg = 0x101, val = 0x6af
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e02, shift = 0x1, reg = 0x101, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e04, shift = 0x1, reg = 0x102, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54e04, shift = 0x1, reg = 0x102, val = 0x6ae
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e04, shift = 0x1, reg = 0x102, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e06, shift = 0x1, reg = 0x103, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54e06, shift = 0x1, reg = 0x103, val = 0x6ae
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54e06, shift = 0x1, reg = 0x103, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54c80, shift = 0x1, reg = 0x40, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54c80, shift = 0x1, reg = 0x40, val = 0x2a82
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54c80, shift = 0x1, reg = 0x40, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54c9a, shift = 0x1, reg = 0x4d, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54c9a, shift = 0x1, reg = 0x4d, val = 0x14
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54c9a, shift = 0x1, reg = 0x4d, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2953]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dd6, shift = 0x1, reg = 0xeb, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e54dd6, shift = 0x1, reg = 0xeb, val = 0x3
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e54dd6, shift = 0x1, reg = 0xeb, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2971] rx_ln_vals
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c00, shift = 0x1, reg = 0x0, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58c00, shift = 0x1, reg = 0x0, val = 0xd1d
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c00, shift = 0x1, reg = 0x0, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c02, shift = 0x1, reg = 0x1, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58c02, shift = 0x1, reg = 0x1, val = 0xd1d
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c02, shift = 0x1, reg = 0x1, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c04, shift = 0x1, reg = 0x2, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58c04, shift = 0x1, reg = 0x2, val = 0xd00
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c04, shift = 0x1, reg = 0x2, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c06, shift = 0x1, reg = 0x3, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58c06, shift = 0x1, reg = 0x3, val = 0x500
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58c06, shift = 0x1, reg = 0x3, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58d20, shift = 0x1, reg = 0x90, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58d20, shift = 0x1, reg = 0x90, val = 0x13
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58d20, shift = 0x1, reg = 0x90, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58e10, shift = 0x1, reg = 0x108, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58e10, shift = 0x1, reg = 0x108, val = 0x0
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58e10, shift = 0x1, reg = 0x108, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58e92, shift = 0x1, reg = 0x149, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58e92, shift = 0x1, reg = 0x149, val = 0xc02
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58e92, shift = 0x1, reg = 0x149, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58eee, shift = 0x1, reg = 0x177, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58eee, shift = 0x1, reg = 0x177, val = 0x330
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58eee, shift = 0x1, reg = 0x177, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ef0, shift = 0x1, reg = 0x178, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58ef0, shift = 0x1, reg = 0x178, val = 0x300
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ef0, shift = 0x1, reg = 0x178, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ee2, shift = 0x1, reg = 0x171, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58ee2, shift = 0x1, reg = 0x171, val = 0x19
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ee2, shift = 0x1, reg = 0x171, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ee4, shift = 0x1, reg = 0x172, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58ee4, shift = 0x1, reg = 0x172, val = 0x19
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ee4, shift = 0x1, reg = 0x172, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fd0, shift = 0x1, reg = 0x1e8, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58fd0, shift = 0x1, reg = 0x1e8, val = 0x1004
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fd0, shift = 0x1, reg = 0x1e8, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fca, shift = 0x1, reg = 0x1e5, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58fca, shift = 0x1, reg = 0x1e5, val = 0xf9
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fca, shift = 0x1, reg = 0x1e5, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fc4, shift = 0x1, reg = 0x1e2, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58fc4, shift = 0x1, reg = 0x1e2, val = 0xc01
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fc4, shift = 0x1, reg = 0x1e2, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fc6, shift = 0x1, reg = 0x1e3, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58fc6, shift = 0x1, reg = 0x1e3, val = 0x2
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fc6, shift = 0x1, reg = 0x1e3, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fea, shift = 0x1, reg = 0x1f5, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58fea, shift = 0x1, reg = 0x1f5, val = 0x0
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fea, shift = 0x1, reg = 0x1f5, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fe8, shift = 0x1, reg = 0x1f4, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58fe8, shift = 0x1, reg = 0x1f4, val = 0x31
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58fe8, shift = 0x1, reg = 0x1f4, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ffe, shift = 0x1, reg = 0x1ff, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58ffe, shift = 0x1, reg = 0x1ff, val = 0x1
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58ffe, shift = 0x1, reg = 0x1ff, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58d00, shift = 0x1, reg = 0x80, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58d00, shift = 0x1, reg = 0x80, val = 0x18c
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58d00, shift = 0x1, reg = 0x80, val = 0x83873734
-[phy:0x0][cdns_torrent_phy_configure_multilink:2983]
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58d04, shift = 0x1, reg = 0x82, val = 0x83873734
-[phy:0x0][cdns_regmap_write:515] [write] address = 0x83e58d04, shift = 0x1, reg = 0x82, val = 0x3
-[phy:0x0][cdns_regmap_read:527] [read] address = 0x83e58d04, shift = 0x1, reg = 0x82, val = 0x83873734
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853382e2, shift = 0x1, reg = 0x171, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853382e2, shift = 0x1, reg = 0x171, val = 0x19
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853382e2, shift = 0x1, reg = 0x171, val = 0x8384b734
 [phy:0x0][cdns_torrent_phy_configure_multilink:3001]
-[phy:0x0][cdns_torrent_phy_configure_multilink:3008] lnk_rst = 0x8a2d900, node = 01
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1548] [write] wiz->p_enable[4 - 1] = 0x88832c0, P_ENABLE_FORCE = 0x1
-[phy:0x0][cdns_torrent_phy_configure_multilink:3011]
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1488] [read] field = 0x8883a40, val = 0x0
-[wiz][wiz_phy_reset_deassert:1491] [write] wiz->typec_ln10_swap = 0x8883a40, val = 0x0
-[wiz][wiz_phy_reset_deassert:1530] [write] wiz->phy_reset_n = 0x79c2bc0, val = 0x1
-[phy:0x0][cdns_torrent_phy_configure_multilink:3016]
-[phy:0x0][cdns_torrent_phy_probe:3432]
-[phy:0x0][cdns_torrent_phy_probe:3438]
-[phy:0x0][cdns_torrent_phy_probe:3441]
-[phy:0x0][cdns_torrent_phy_probe:3455]
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x211b140, val = 0x0
-[phy:0xf][cdns_torrent_phy_init:2530] physical address = 0x5060000
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x211b140, val = 0x2, index = 0x0, name =
-[phy:0xf][cdns_torrent_phy_init:2531] phy_id = 15
-[phy:0xf][cdns_torrent_phy_on:1758] physical address = 0x5060000
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x211b200, val = 0x0
-[phy:0xf][cdns_torrent_phy_on:1760] phy_id = 0xf
-[phy:0xf][cdns_regmap_read:527] [read] address = 0x83e5e000, shift = 0x1, reg = 0x0, val = 0x82e3baa4
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x211b200, val = 0x2, index = 0x0, name =
-[phy:0xf][cdns_torrent_phy_on:1792] [read] regmap = 0x8b975c0, val = 0x1, cond = 0x1, sleep = 0x3e8, timeout = 0x186a0
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x211b2c0, val = 0x0
-[phy:0xf][cdns_regmap_read:527] [read] address = 0x83e5d616, shift = 0x1, reg = 0xb, val = 0x82e3baa4
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x211b2c0, val = 0x2, index = 0x0, name =
-[phy:0xf][cdns_regmap_read:527] [read] address = 0x83e5d616, shift = 0x1, reg = 0xb, val = 0x82e3baa4
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x7988980, val = 0x0
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x7988980, val = 0x2, index = 0x0, name =
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x7988a40, val = 0x0
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x7988a40, val = 0x2, index = 0x0, name =
-[wiz][wiz_clk_mux_set_parent:912] [read] field = 0x7988b00, val = 0x0
-[wiz][wiz_clk_mux_set_parent:916] [write] field = 0x7988b00, val = 0x2, index = 0x0, name =
-[pcie][j721e_pcie_probe:472]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853382e4, shift = 0x1, reg = 0x172, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853382e4, shift = 0x1, reg = 0x172, val = 0x19
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853382e4, shift = 0x1, reg = 0x172, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853383fe, shift = 0x1, reg = 0x1ff, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853383fe, shift = 0x1, reg = 0x1ff, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853383fe, shift = 0x1, reg = 0x1ff, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853386e2, shift = 0x1, reg = 0x171, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853386e2, shift = 0x1, reg = 0x171, val = 0x19
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853386e2, shift = 0x1, reg = 0x171, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853386e4, shift = 0x1, reg = 0x172, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853386e4, shift = 0x1, reg = 0x172, val = 0x19
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853386e4, shift = 0x1, reg = 0x172, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853387fe, shift = 0x1, reg = 0x1ff, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x853387fe, shift = 0x1, reg = 0x1ff, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x853387fe, shift = 0x1, reg = 0x1ff, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3019]
+[phy:0x0][cdns_torrent_phy_configure_multilink:3026] lnk_rst = 0x62b4480, node = 0x0
+[phy:0x0][cdns_torrent_phy_configure_multilink:3027] id = 0xe, node = 0x0
+[wiz][wiz_phy_reset_deassert:1481]
+[wiz][wiz_phy_reset_deassert:1547]
+[wiz][wiz_phy_reset_deassert:1551]
+[wiz][wiz_phy_reset_deassert:1560] [write] wiz->p_enable[1 - 1] = 0x7540140, P_ENABLE_FORCE = 0x1
+[wiz][wiz_phy_reset_deassert:1481]
+[wiz][wiz_phy_reset_deassert:1547]
+[wiz][wiz_phy_reset_deassert:1551]
+[wiz][wiz_phy_reset_deassert:1560] [write] wiz->p_enable[2 - 1] = 0x75408c0, P_ENABLE_FORCE = 0x1
+[phy:0x0][cdns_torrent_phy_configure_multilink:2811] link_cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2824]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x8384b6a4
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x8384b634
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c01c, shift = 0x1, reg = 0xe, val = 0x8384b6a4
+[phy:0x0][cdns_torrent_phy_configure_multilink:2833]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330342, shift = 0x1, reg = 0x1a1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330342, shift = 0x1, reg = 0x1a1, val = 0x601
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330342, shift = 0x1, reg = 0x1a1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2833]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330362, shift = 0x1, reg = 0x1b1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330362, shift = 0x1, reg = 0x1b1, val = 0x400
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330362, shift = 0x1, reg = 0x1b1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2833]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330382, shift = 0x1, reg = 0x1c1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330382, shift = 0x1, reg = 0x1c1, val = 0x8600
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330382, shift = 0x1, reg = 0x1c1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2847] xcvr_diag_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dcc, shift = 0x1, reg = 0xe6, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334dcc, shift = 0x1, reg = 0xe6, val = 0x11
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dcc, shift = 0x1, reg = 0xe6, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dce, shift = 0x1, reg = 0xe7, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334dce, shift = 0x1, reg = 0xe7, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dce, shift = 0x1, reg = 0xe7, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2858]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dca, shift = 0x1, reg = 0xe5, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334dca, shift = 0x1, reg = 0xe5, val = 0xc9
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dca, shift = 0x1, reg = 0xe5, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2875] pcs_cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2886]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c040, shift = 0x1, reg = 0x20, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x8533c040, shift = 0x1, reg = 0x20, val = 0xa0a
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c040, shift = 0x1, reg = 0x20, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2886]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c044, shift = 0x1, reg = 0x22, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x8533c044, shift = 0x1, reg = 0x22, val = 0x1000
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c044, shift = 0x1, reg = 0x22, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2886]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c046, shift = 0x1, reg = 0x23, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x8533c046, shift = 0x1, reg = 0x23, val = 0x10
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533c046, shift = 0x1, reg = 0x23, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2903] phy_pma_cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2931] cmn_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330082, shift = 0x1, reg = 0x41, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330082, shift = 0x1, reg = 0x41, val = 0x8200
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330082, shift = 0x1, reg = 0x41, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533008e, shift = 0x1, reg = 0x47, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x8533008e, shift = 0x1, reg = 0x47, val = 0x8200
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x8533008e, shift = 0x1, reg = 0x47, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330206, shift = 0x1, reg = 0x103, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330206, shift = 0x1, reg = 0x103, val = 0x7f
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330206, shift = 0x1, reg = 0x103, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2942]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330216, shift = 0x1, reg = 0x10b, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85330216, shift = 0x1, reg = 0x10b, val = 0x7f
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85330216, shift = 0x1, reg = 0x10b, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2959] tx_ln_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e00, shift = 0x1, reg = 0x100, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334e00, shift = 0x1, reg = 0x100, val = 0x2ff
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e00, shift = 0x1, reg = 0x100, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e02, shift = 0x1, reg = 0x101, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334e02, shift = 0x1, reg = 0x101, val = 0x6af
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e02, shift = 0x1, reg = 0x101, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e04, shift = 0x1, reg = 0x102, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334e04, shift = 0x1, reg = 0x102, val = 0x6ae
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e04, shift = 0x1, reg = 0x102, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e06, shift = 0x1, reg = 0x103, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334e06, shift = 0x1, reg = 0x103, val = 0x6ae
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334e06, shift = 0x1, reg = 0x103, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334c80, shift = 0x1, reg = 0x40, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334c80, shift = 0x1, reg = 0x40, val = 0x2a82
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334c80, shift = 0x1, reg = 0x40, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334c9a, shift = 0x1, reg = 0x4d, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334c9a, shift = 0x1, reg = 0x4d, val = 0x14
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334c9a, shift = 0x1, reg = 0x4d, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2971]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dd6, shift = 0x1, reg = 0xeb, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85334dd6, shift = 0x1, reg = 0xeb, val = 0x3
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85334dd6, shift = 0x1, reg = 0xeb, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:2989] rx_ln_vals
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c00, shift = 0x1, reg = 0x0, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338c00, shift = 0x1, reg = 0x0, val = 0xd1d
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c00, shift = 0x1, reg = 0x0, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c02, shift = 0x1, reg = 0x1, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338c02, shift = 0x1, reg = 0x1, val = 0xd1d
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c02, shift = 0x1, reg = 0x1, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c04, shift = 0x1, reg = 0x2, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338c04, shift = 0x1, reg = 0x2, val = 0xd00
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c04, shift = 0x1, reg = 0x2, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c06, shift = 0x1, reg = 0x3, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338c06, shift = 0x1, reg = 0x3, val = 0x500
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338c06, shift = 0x1, reg = 0x3, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338d20, shift = 0x1, reg = 0x90, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338d20, shift = 0x1, reg = 0x90, val = 0x13
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338d20, shift = 0x1, reg = 0x90, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338e10, shift = 0x1, reg = 0x108, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338e10, shift = 0x1, reg = 0x108, val = 0x0
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338e10, shift = 0x1, reg = 0x108, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338e92, shift = 0x1, reg = 0x149, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338e92, shift = 0x1, reg = 0x149, val = 0xc02
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338e92, shift = 0x1, reg = 0x149, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338eee, shift = 0x1, reg = 0x177, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338eee, shift = 0x1, reg = 0x177, val = 0x330
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338eee, shift = 0x1, reg = 0x177, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ef0, shift = 0x1, reg = 0x178, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338ef0, shift = 0x1, reg = 0x178, val = 0x300
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ef0, shift = 0x1, reg = 0x178, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ee2, shift = 0x1, reg = 0x171, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338ee2, shift = 0x1, reg = 0x171, val = 0x19
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ee2, shift = 0x1, reg = 0x171, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ee4, shift = 0x1, reg = 0x172, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338ee4, shift = 0x1, reg = 0x172, val = 0x19
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ee4, shift = 0x1, reg = 0x172, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fd0, shift = 0x1, reg = 0x1e8, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338fd0, shift = 0x1, reg = 0x1e8, val = 0x1004
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fd0, shift = 0x1, reg = 0x1e8, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fca, shift = 0x1, reg = 0x1e5, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338fca, shift = 0x1, reg = 0x1e5, val = 0xf9
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fca, shift = 0x1, reg = 0x1e5, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fc4, shift = 0x1, reg = 0x1e2, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338fc4, shift = 0x1, reg = 0x1e2, val = 0xc01
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fc4, shift = 0x1, reg = 0x1e2, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fc6, shift = 0x1, reg = 0x1e3, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338fc6, shift = 0x1, reg = 0x1e3, val = 0x2
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fc6, shift = 0x1, reg = 0x1e3, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fea, shift = 0x1, reg = 0x1f5, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338fea, shift = 0x1, reg = 0x1f5, val = 0x0
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fea, shift = 0x1, reg = 0x1f5, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fe8, shift = 0x1, reg = 0x1f4, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338fe8, shift = 0x1, reg = 0x1f4, val = 0x31
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338fe8, shift = 0x1, reg = 0x1f4, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ffe, shift = 0x1, reg = 0x1ff, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338ffe, shift = 0x1, reg = 0x1ff, val = 0x1
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338ffe, shift = 0x1, reg = 0x1ff, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338d00, shift = 0x1, reg = 0x80, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338d00, shift = 0x1, reg = 0x80, val = 0x18c
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338d00, shift = 0x1, reg = 0x80, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3001]
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338d04, shift = 0x1, reg = 0x82, val = 0x8384b734
+[phy:0x0][cdns_regmap_write:515] [write] address = 0x85338d04, shift = 0x1, reg = 0x82, val = 0x3
+[phy:0x0][cdns_regmap_read:527] [read] address = 0x85338d04, shift = 0x1, reg = 0x82, val = 0x8384b734
+[phy:0x0][cdns_torrent_phy_configure_multilink:3019]
+[phy:0x0][cdns_torrent_phy_configure_multilink:3026] lnk_rst = 0x6d25400, node = 0x1
+[phy:0x0][cdns_torrent_phy_configure_multilink:3027] id = 0xf, node = 0x1
+[wiz][wiz_phy_reset_deassert:1481]
+[wiz][wiz_phy_reset_deassert:1547]
+[wiz][wiz_phy_reset_deassert:1551]
+[wiz][wiz_phy_reset_deassert:1560] [write] wiz->p_enable[4 - 1] = 0x23e4800, P_ENABLE_FORCE = 0x1
+[phy:0x0][cdns_torrent_phy_configure_multilink:3030]
+[wiz][wiz_phy_reset_deassert:1481]
+[wiz][wiz_phy_reset_deassert:1500] [read] field = 0x23e4f80, val = 0x0
+[wiz][wiz_phy_reset_deassert:1503] [write] wiz->typec_ln10_swap = 0x23e4f80, val = 0x0
+[wiz][wiz_phy_reset_deassert:1542] [write] wiz->phy_reset_n = 0x89a7b00, val = 0x1
+[phy:0x0][cdns_torrent_phy_configure_multilink:3035]
+[phy:0x0][cdns_torrent_phy_probe:3453]
+[phy:0x0][cdns_torrent_phy_probe:3459]
+[phy:0x0][cdns_torrent_phy_probe:3462]
+[phy:0x0][cdns_torrent_phy_probe:3476] ##
+[phy:0x0][cdns_torrent_phy_probe:3477] ##
+[phy:0x0][cdns_torrent_phy_probe:3478] The end
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x625fec0, val = 0x0
+[phy:0xf][cdns_torrent_phy_init:2540] physical address = 0x5060000
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21adc00, shift = 0x1c, reg = 0x40c
+[phy:0xf][cdns_torrent_phy_init:2541] phy_id = 0xf
+[phy:0xf][cdns_torrent_phy_init:2545] The end
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x625fec0, val = 0x2, index = 0x0, name =
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x625ff80, val = 0x0
+[phy:0xf][cdns_torrent_phy_on:1759] physical address = 0x5060000
+[phy:0xf][cdns_torrent_phy_on:1761] phy_id = 0xf
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21adc00, shift = 0x16, reg = 0x40c
+[phy:0xf][cdns_torrent_phy_on:1764] The end
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x625ff80, val = 0x2, index = 0x0, name =
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x88ef080, val = 0x0
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21adc00, shift = 0x18, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x88ef080, val = 0x2, index = 0x0, name =
+[pcie][j721e_pcie_probe:471] ##
+[pcie][j721e_pcie_probe:472] ##
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x45df080, val = 0x0
 [pcie][j721e_pcie_probe:478] physical address = 0x2910000
 [pcie][j721e_pcie_probe:489]
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21acc00, shift = 0x1c, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x45df080, val = 0x2, index = 0x0, name =
 [pcie][j721e_pcie_probe:492]
 [pcie][j721e_pcie_probe:495]
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x45df140, val = 0x0
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21acc00, shift = 0x16, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x45df140, val = 0x2, index = 0x0, name =
+[wiz][wiz_clk_mux_set_parent:923] [read] field = 0x45df200, val = 0x0
+[wiz][wiz_clk_mux_set_parent:925] regmap = 0x21acc00, shift = 0x18, reg = 0x40c
+[wiz][wiz_clk_mux_set_parent:928] [write] field = 0x45df200, val = 0x2, index = 0x0, name =
 [pcie][j721e_pcie_probe:505]
 [pcie][j721e_pcie_probe:535]
-[pcie][j721e_pcie_probe:540] intd_cfg_base= 0x82fb7000
-[pcie][j721e_pcie_probe:545] user_cfg_base= 0x82fb9000
+[pcie][j721e_pcie_probe:540] intd_cfg_base= 0x82fed000
+[pcie][j721e_pcie_probe:545] user_cfg_base= 0x82ff5000
 [pcie][j721e_pcie_probe:554] num lane = 2
 [pcie][j721e_pcie_probe:555] max lane = 4
-[pcie][j721e_pcie_probe:558] base address = 0x82fb9000, bit mask = 0xffffffff
+[pcie][j721e_pcie_probe:558] base address = 0x82ff5000, bit mask = 0xffffffff
 [pcie][j721e_pcie_probe:568] set pm_runtime_enable
 [pcie][j721e_pcie_probe:570] sync pm_runtime_enable
 [pcie][j721e_pcie_probe:576]
-[pcie][j721e_pcie_ctrl_init:267]
-[pcie][j721e_pcie_ctrl_init:273]
-[pcie][j721e_pcie_ctrl_init:282] base address = 0xffffffea
+[pcie][j721e_pcie_ctrl_init:266]
+[pcie][j721e_pcie_ctrl_init:272]
+[pcie][j721e_pcie_ctrl_init:281] base address = 0xffffffea
 [pcie][j721e_pcie_set_mode:193] [read] regmap = 0x129e800, offset = 0x74, val = 0x2
 [pcie][j721e_pcie_set_mode:197] [write] regmap = 0x129e800, offset = 0x74, mask = 0x80, val = 0x80
-[pcie][j721e_pcie_ctrl_init:289]
+[pcie][j721e_pcie_ctrl_init:288]
 [pcie][j721e_pcie_set_link_speed:219] [read] regmap = 0x129e800, offset = 0x74, val = 0x82
 [pcie][j721e_pcie_set_link_speed:222] [write] regmap = 0x129e800, offset = 0x74, mask = 0x3, val = 0x2
-[pcie][j721e_pcie_ctrl_init:295]
+[pcie][j721e_pcie_ctrl_init:294]
 [pcie][j721e_pcie_set_lane_count:244] [read] regmap = 0x129e800, offset = 0x74, val = 0x82
-[pcie][j721e_pcie_set_lane_count:250] [write] regmap = 0x129e800, offset = 0x74, mask = 0x300, val = 0x100
+[pcie][j721e_pcie_set_lane_count:249] [write] regmap = 0x129e800, offset = 0x74, mask = 0x300, val = 0x100
 [pcie][j721e_pcie_probe:583]
 [pcie][j721e_pcie_probe:590]
 [pcie][j721e_pcie_config_link_irq:132]
-[pcie][j721e_pcie_intd_readl:99] [read] address = 0x82fb7000, offset = 0x108, value = 0x0
+[pcie][j721e_pcie_intd_readl:99] [read] address = 0x82fed000, offset = 0x108, value = 0x0
 [pcie][j721e_pcie_config_link_irq:134]
 [pcie][j721e_pcie_config_link_irq:136]
-[pcie][j721e_pcie_intd_writel:108] [write] address = 0x82fb7000, offset = 0x108, value = 0x2
+[pcie][j721e_pcie_intd_writel:108] [write] address = 0x82fed000, offset = 0x108, value = 0x2
 [pcie][j721e_pcie_config_link_irq:138]
+[pcie][j721e_pcie_probe:592] ## ----> issue
 [pcie][j721e_pcie_probe:595]
 [pcie][j721e_pcie_probe:602]
 [pcie][cdns_pcie_init_phy:202]
@@ -778,30 +793,28 @@
 [pcie][cdns_pcie_init_phy:213]
 [pcie][cdns_pcie_init_phy:219]
 [pcie][cdns_pcie_init_phy:226]
-[pcie][cdns_pcie_init_phy:233] phy = 0x56b5400, i = 0x0
-[pcie][cdns_pcie_init_phy:234] link = 0x1d30c00, i = 0x0
+[pcie][cdns_pcie_init_phy:233] phy = 0x2c6e000, i = 0x0
+[pcie][cdns_pcie_init_phy:234] link = 0x6277800, i = 0x0
 [pcie][cdns_pcie_init_phy:240]
 [pcie][cdns_pcie_enable_phy:168]
-[phy:0xe][cdns_torrent_phy_init:2530] physical address = 0x5060000
-[phy:0xe][cdns_torrent_phy_init:2531] phy_id = 14
+[phy:0xe][cdns_torrent_phy_init:2540] physical address = 0x5060000
+[phy:0xe][cdns_torrent_phy_init:2541] phy_id = 0xe
+[phy:0xe][cdns_torrent_phy_init:2548] The end
 [pcie][cdns_pcie_enable_phy:173]
-[phy:0xe][cdns_torrent_phy_on:1758] physical address = 0x5060000
-[phy:0xe][cdns_torrent_phy_on:1760] phy_id = 0xe
-[phy:0xe][cdns_regmap_read:527] [read] address = 0x83e5e000, shift = 0x1, reg = 0x0, val = 0x82e3b964
-[phy:0xe][cdns_torrent_phy_on:1792] [read] regmap = 0x8b975c0, val = 0x1, cond = 0x1, sleep = 0x3e8, timeout = 0x186a0
-[phy:0xe][cdns_regmap_read:527] [read] address = 0x83e5d016, shift = 0x1, reg = 0xb, val = 0x82e3b964
-[phy:0xe][cdns_regmap_read:527] [read] address = 0x83e5d016, shift = 0x1, reg = 0xb, val = 0x82e3b964
-[phy:0xe][cdns_torrent_phy_on:1804] [read] regmap = 0x8a2ac80, lane = 0x0, val = 0x0, cond = 0x1, sleep = 0x3e8, timeout = 0x186a0
-[phy:0xe][cdns_torrent_phy_on:1813]
+[phy:0xe][cdns_torrent_phy_on:1759] physical address = 0x5060000
+[phy:0xe][cdns_torrent_phy_on:1761] phy_id = 0xe
+[phy:0xe][cdns_torrent_phy_on:1767] The end
 [pcie][cdns_pcie_enable_phy:179]
 [pcie][cdns_pcie_enable_phy:181]
 [pcie][cdns_pcie_init_phy:244]
 [pcie][j721e_pcie_probe:608]
 [pcie][j721e_pcie_probe:614]
-[pcie][j721e_pcie_probe:631] reset 100 us
-[pcie][j721e_pcie_probe:633]
-[pcie][j721e_pcie_probe:635]
-[pcie][j721e_pcie_probe:637]
+[pcie][j721e_pcie_probe:621] ##
+[pcie][j721e_pcie_probe:622] ##
+[pcie][j721e_pcie_probe:632] reset 100 us
+[pcie][j721e_pcie_probe:634]
+[pcie][j721e_pcie_probe:636]
+[pcie][j721e_pcie_probe:638]
 [pcie][cdns_pcie_host_setup:559] physical address = 0x2910000
 [pcie][cdns_pcie_host_setup:564]
 [pcie][cdns_pcie_host_setup:567]
@@ -816,42 +829,42 @@
 [pcie][cdns_pcie_writel:424] [write] address = 0x90000000, reg = 0x100da8, value = 0x21110
 [pcie][cdns_pcie_host_link_setup:530]
 [pcie][j721e_pcie_start_link:145]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x4, value = 0x0
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x4, value = 0x0
 [pcie][j721e_pcie_start_link:148]
-[pcie][j721e_pcie_user_writel:91] [write] address = 0x82fb9000, offset = 0x4, value = 0x1
+[pcie][j721e_pcie_user_writel:91] [write] address = 0x82ff5000, offset = 0x4, value = 0x1
 [pcie][j721e_pcie_start_link:150]
 [pcie][cdns_pcie_host_link_setup:536]
 [pcie][cdns_pcie_host_start_link:168]
 [pcie][cdns_pcie_host_wait_for_link:110]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][j721e_pcie_link_up:169]
-[pcie][j721e_pcie_user_readl:83] [read] address = 0x82fb9000, offset = 0x14, value = 0x8
+[pcie][j721e_pcie_user_readl:83] [read] address = 0x82ff5000, offset = 0x14, value = 0x8
 [pcie][j721e_pcie_link_up:174]
 [pcie][cdns_pcie_host_link_setup:540]
 [pcie][cdns_pcie_host_setup:589]
@@ -961,103 +974,86 @@
 [pcie][cdns_pcie_host_map_dma_ranges:442]
 [pcie][cdns_pcie_host_setup:596]
 [pcie][cdns_pcie_host_setup:599]
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000004, bus = 0x892c800, devfn = 0x0, where = 0x4, size = 0x2, value = 0x400
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000004, bus = 0x892c800, devfn = 0x0, where = 0x4, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000010, bus = 0x892c800, devfn = 0x0, where = 0x10, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000010, bus = 0x892c800, devfn = 0x0, where = 0x10, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000014, bus = 0x892c800, devfn = 0x0, where = 0x14, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000014, bus = 0x892c800, devfn = 0x0, where = 0x14, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000038, bus = 0x892c800, devfn = 0x0, where = 0x38, size = 0x4, value = 0xfffff800
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000038, bus = 0x892c800, devfn = 0x0, where = 0x38, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000028, bus = 0x892c800, devfn = 0x0, where = 0x28, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000028, bus = 0x892c800, devfn = 0x0, where = 0x28, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000e8, bus = 0x892c800, devfn = 0x0, where = 0xe8, size = 0x2, value = 0x400
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3e, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000084, bus = 0x892c800, devfn = 0x0, where = 0x84, size = 0x2, value = 0x8008
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000208, bus = 0x892c800, devfn = 0x0, where = 0x208, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000220, bus = 0x892c800, devfn = 0x0, where = 0x220, size = 0x4, value = 0x1
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000224, bus = 0x892c800, devfn = 0x0, where = 0x224, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000224, bus = 0x892c800, devfn = 0x0, where = 0x224, size = 0x4, value = 0x4
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000228, bus = 0x892c800, devfn = 0x0, where = 0x228, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000228, bus = 0x892c800, devfn = 0x0, where = 0x228, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000022c, bus = 0x892c800, devfn = 0x0, where = 0x22c, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000022c, bus = 0x892c800, devfn = 0x0, where = 0x22c, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000230, bus = 0x892c800, devfn = 0x0, where = 0x230, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000230, bus = 0x892c800, devfn = 0x0, where = 0x230, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000234, bus = 0x892c800, devfn = 0x0, where = 0x234, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000234, bus = 0x892c800, devfn = 0x0, where = 0x234, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000238, bus = 0x892c800, devfn = 0x0, where = 0x238, size = 0x4, value = 0xffffffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000238, bus = 0x892c800, devfn = 0x0, where = 0x238, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000210, bus = 0x892c800, devfn = 0x0, where = 0x210, size = 0x2, value = 0x4
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000210, bus = 0x892c800, devfn = 0x0, where = 0x210, size = 0x2, value = 0x3
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000210, bus = 0x892c800, devfn = 0x0, where = 0x210, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000210, bus = 0x892c800, devfn = 0x0, where = 0x210, size = 0x2, value = 0x1
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000210, bus = 0x892c800, devfn = 0x0, where = 0x210, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000130, bus = 0x892c800, devfn = 0x0, where = 0x130, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000110, bus = 0x892c800, devfn = 0x0, where = 0x110, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000104, bus = 0x892c800, devfn = 0x0, where = 0x104, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000c8, bus = 0x892c800, devfn = 0x0, where = 0xc8, size = 0x2, value = 0x281f
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3e, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000018, bus = 0x892c800, devfn = 0x0, where = 0x18, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3e, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3e, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000004, bus = 0x892c800, devfn = 0x0, where = 0x6, size = 0x2, value = 0xffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000018, bus = 0x892c800, devfn = 0x0, where = 0x18, size = 0x4, value = 0xff0100
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000004, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000004, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000010, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000010, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000014, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000014, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000038, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000038, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000028, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000028, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000e8, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000084, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000208, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000220, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000224, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000224, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000228, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000228, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000022c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000022c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000230, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000230, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000234, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000234, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000238, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000238, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000210, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000210, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000210, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000210, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000210, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000130, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000110, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000104, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000c8, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000018, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000004, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000018, bus = 0x6289800, devfn = 0x0,
 [pcie][cdns_pcie_readl:431] [read] address = 0x90000000, reg = 0x100000, value = 0x24
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000018, bus = 0x892c800, devfn = 0x0, where = 0x1a, size = 0x1, value = 0x1
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3e, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000224, bus = 0x892c800, devfn = 0x0, where = 0x224, size = 0x4, value = 0x18400004
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000228, bus = 0x892c800, devfn = 0x0, where = 0x228, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000030, bus = 0x892c800, devfn = 0x0, where = 0x30, size = 0x4, value = 0xffff
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000001c, bus = 0x892c800, devfn = 0x0, where = 0x1c, size = 0x2, value = 0xf0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000030, bus = 0x892c800, devfn = 0x0, where = 0x30, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000020, bus = 0x892c800, devfn = 0x0, where = 0x20, size = 0x4, value = 0xfff0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000002c, bus = 0x892c800, devfn = 0x0, where = 0x2c, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000024, bus = 0x892c800, devfn = 0x0, where = 0x24, size = 0x4, value = 0xfff0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000028, bus = 0x892c800, devfn = 0x0, where = 0x28, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000002c, bus = 0x892c800, devfn = 0x0, where = 0x2c, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3e, size = 0x2, value = 0x2
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000003c, bus = 0x892c800, devfn = 0x0, where = 0x3c, size = 0x1, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000dc, bus = 0x892c800, devfn = 0x0, where = 0xdc, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000004, bus = 0x892c800, devfn = 0x0, where = 0x4, size = 0x2, value = 0x4
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000b0, bus = 0x892c800, devfn = 0x0, where = 0xb2, size = 0x2, value = 0xc000
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000b0, bus = 0x892c800, devfn = 0x0, where = 0xb2, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000090, bus = 0x892c800, devfn = 0x0, where = 0x92, size = 0x2, value = 0x180
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000a0, bus = 0x892c800, devfn = 0x0, where = 0xa0, size = 0x4, value = 0x1
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000090, bus = 0x892c800, devfn = 0x0, where = 0x92, size = 0x2, value = 0x180
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000094, bus = 0x892c800, devfn = 0x0, where = 0x94, size = 0x4, value = 0x1040000
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000098, bus = 0x892c800, devfn = 0x0, where = 0x98, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000009c, bus = 0x892c800, devfn = 0x0, where = 0x9c, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000004, bus = 0x892c800, devfn = 0x0, where = 0x4, size = 0x2, value = 0x404
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000090, bus = 0x892c800, devfn = 0x0, where = 0x92, size = 0x2, value = 0x181
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000dc, bus = 0x892c800, devfn = 0x0, where = 0xdc, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000e0, bus = 0x892c800, devfn = 0x0, where = 0xe0, size = 0x4, value = 0x10000
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000a0, bus = 0x892c800, devfn = 0x0, where = 0xa0, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000dc, bus = 0x892c800, devfn = 0x0, where = 0xdc, size = 0x2, value = 0x8
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000c8, bus = 0x892c800, devfn = 0x0, where = 0xca, size = 0x2, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x900000dc, bus = 0x892c800, devfn = 0x0, where = 0xdc, size = 0x2, value = 0x8
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000130, bus = 0x892c800, devfn = 0x0, where = 0x130, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000110, bus = 0x892c800, devfn = 0x0, where = 0x110, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x90000104, bus = 0x892c800, devfn = 0x0, where = 0x104, size = 0x4, value = 0x0
-[pcie][cdns_ti_pcie_config_write:336] [write] addr = 0x9000012c, bus = 0x892c800, devfn = 0x0, where = 0x12c, size = 0x4, value = 0x7
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000018, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000224, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000228, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000030, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000001c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000030, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000020, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000002c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000024, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000028, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000002c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000003c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000dc, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000004, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000b0, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000b0, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000090, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000a0, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000090, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000094, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000098, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000009c, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000004, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000090, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000dc, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000e0, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000a0, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000dc, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000c8, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x900000dc, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000130, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000110, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x90000104, bus = 0x6289800, devfn = 0x0,
+[pcie][cdns_ti_pcie_config_write:335] [write] addr = 0x9000012c, bus = 0x6289800, devfn = 0x0,
 [pcie][cdns_pcie_host_setup:603]
-[pcie][j721e_pcie_probe:644]
-[pcie][j721e_pcie_probe:660]
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1542] [write] wiz->p_enable[1 - 1] = 0x7988c80, P_ENABLE = 0x2
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1542] [write] wiz->p_enable[2 - 1] = 0x7ba1440, P_ENABLE = 0x2
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1542] [write] wiz->p_enable[3 - 1] = 0x7ba1bc0, P_ENABLE = 0x2
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1535]
-[wiz][wiz_phy_reset_deassert:1539]
-[wiz][wiz_phy_reset_deassert:1542] [write] wiz->p_enable[4 - 1] = 0x828f380, P_ENABLE = 0x2
-[wiz][wiz_phy_reset_deassert:1469]
-[wiz][wiz_phy_reset_deassert:1530] [write] wiz->phy_reset_n = 0x7988680, val = 0x1
+[pcie][j721e_pcie_probe:645]
+[pcie][j721e_pcie_probe:661] ##
+[pcie][j721e_pcie_probe:662] ##
